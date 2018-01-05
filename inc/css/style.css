@@ -1,0 +1,64 @@
+/* 
+Project : 자연학습 스토리기반 콘텐츠
+Author  : kang2oon
+Date    : 2018-01-04
+*/
+
+/* Common */
+*{-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html, body {font-family:'Iropke Batang', Dotum, sans-serif;font-size:14px;-webkit-font-smoothing:antialiased;line-height:1.4;min-height: 100%;background: #87a89f;}
+.fleft{float:left;}
+.fright{float:right;}
+.alternative{z-index: -1;width: 0;height: 0;overflow: hidden;visibility: hidden;}
+
+/* Layout */
+body.bk{background: #e5e5e5;}
+.sidebar{
+	position:relative;height:100%;width:300px;background:#3f3f3f;color:#fff;padding:13px 30px;
+	-webkit-box-shadow: 3px 0px 13px 0px rgba(0,0,0,0.5);
+	   -moz-box-shadow: 3px 0px 13px 0px rgba(0,0,0,0.5);
+			box-shadow: 3px 0px 13px 0px rgba(0,0,0,0.5);
+}
+	.sidebar h1{font-size:11px;font-weight:400;line-height:1.2;color:rgba(255,255,255,.5);letter-spacing:-.5px;margin-top:25px;}
+	.sidebar h2{font-size:30px;line-height:1.5;margin-bottom:40px;}
+	.sidebar hr{border:1px solid #ff0;width:35px;}
+	.story_list{margin-top:60px;}
+	.story_list li{cursor:pointer;padding:7px 3px;border-top:1px dotted #666;float:left;width:47%;margin-right:3%;}
+	.story_list li:first-child, .story_list li:nth-child(2){border:none;}
+	.story_list li:hover{background:rgba(0,0,0,.25);}
+	.sidebar li:before{
+		display:inline-block;color:#fff;font-size:10px;padding:3px 5px;margin-right:7px;
+		border-radius:3px;font-weight:700;min-width:8px;text-align:center;
+	}
+	.sidebar li[type='page']:before{content:"P";background:#f06;}
+	.sidebar li[type='vod']:before{content:"V";background:#f60;}
+	.sidebar li[type='ani']:before{content:"A";background:#60f;}
+	.sidebar li[type='aod']:before{content:"S";background:#06f;}
+	.legend{margin-top:30px;padding:10px 0 5px;border-top:1px solid rgba(0,0,0,.25);}
+	.legend_list li{padding:3px;float:left;width:47%;margin-right:3%;font-size:12px;}
+.container{position:relative;width:calc(100% - 300px);}
+	.mockup_wrapper{
+		position:absolute;
+		top:50%;margin-top:-432px;
+		left:50%;margin-left:-212px;
+		width:423px;height:864px;
+	}
+	.content_wrapper{position:relative;}
+	#content_area{position:absolute;width:360px;height:640px;top:109px;left:31px;background:transparent;overflow:hidden;}
+	#content_area iframe img{max-width:100%;}
+	.mockup_wrapper{background:url(../../images/mockup_small_wh.png);}
+	.bk .mockup_wrapper{background:url(../../images/mockup_small_bk.png);}
+
+/* Object */
+.btn_area{position:absolute;right:20px;top:0;text-align:center;margin:10px 0 20px;}
+button{
+	width:20px;height:20px;border-radius:10px;
+	text-indent:-9999999999px;font-size:0;
+	border:1px solid #ccc;
+}
+button[value='wh']{background:#fff;}
+button[value='bk']{background:#454545;border-color:#333;}
+button.on{border:4px solid #f60;}
