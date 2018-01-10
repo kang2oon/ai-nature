@@ -1,0 +1,703 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face{
+font-family:'BMHanna';
+src: url(../font/BMHANNA11yrsold.eot);
+src: url(../font/BMHANNA11yrsold.eot?#iefix) format('embedded-opentype'),
+     url(../font/BMHANNA11yrsold.woff) format('woff'),
+     url(../font/BMHANNA_11yrs_ttf.ttf) format('truetype');
+}
+
+
+body {
+  font-family: Arial,BMHanna, sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #000;
+  background: #fff;
+  height: 100%;
+  position: relative;
+}
+
+a {
+  color: #FF847C;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+a:hover, a:active, a:focus {
+  color: #FF847C;
+  outline: none;
+}
+
+p {
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+  font-family: BMHanna, cursive;
+}
+
+::-webkit-selection {
+  color: #818892;
+  background: #f9f6f0;
+}
+
+::-moz-selection {
+  color: #818892;
+  background: #f9f6f0;
+}
+
+::selection {
+  color: #818892;
+  background: #f9f6f0;
+}
+
+#qbootstrap-header {
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  opacity: 1;
+  top: 0;
+  margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  #qbootstrap-header {
+    margin-top: 0;
+    background: #fff;
+    -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+  }
+  #qbootstrap-header .navbar-brand {
+    color: #FF847C !important;
+  }
+  #qbootstrap-header #navbar li a {
+    color: rgba(0, 0, 0, 0.5) !important;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+  #qbootstrap-header #navbar li a:hover {
+    color: #FF847C !important;
+  }
+  #qbootstrap-header #navbar li a span:before {
+    background: transparent !important;
+  }
+  #qbootstrap-header #navbar li.active a {
+    background: transparent;
+    background: none;
+    color: #FF847C !important;
+  }
+  #qbootstrap-header #navbar li.active a span:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+#qbootstrap-header .navbar {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+#qbootstrap-header #navbar li a {
+  font-family: "BMHanna", Arial, sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+}
+#qbootstrap-header #navbar li a span {
+  position: relative;
+  display: block;
+  padding-bottom: 2px;
+}
+#qbootstrap-header #navbar li a span:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FF847C;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+#qbootstrap-header #navbar li a:hover {
+  color: #fff;
+}
+#qbootstrap-header #navbar li a:hover span:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  transform: scaleX(1);
+}
+#qbootstrap-header #navbar li.active a {
+  background: transparent;
+  background: none;
+  color: #fff;
+}
+#qbootstrap-header #navbar li.active a span:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+#qbootstrap-header .navbar-brand {
+  float: left;
+  display: block;
+  font-size: 34px;
+  padding-left: 0;
+  color: #fff;
+  font-family: BMHanna, cursive;
+}
+#qbootstrap-header.navbar-fixed-top {
+  position: fixed !important;
+  background: #fff;
+  -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+  margin-top: 0px;
+  top: 0;
+}
+#qbootstrap-header.navbar-fixed-top .navbar-brand {
+  color: #FF847C;
+}
+#qbootstrap-header.navbar-fixed-top #navbar li a {
+  color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+#qbootstrap-header.navbar-fixed-top #navbar li a:hover {
+  color: #FF847C;
+}
+#qbootstrap-header.navbar-fixed-top #navbar li.active a {
+  background: transparent;
+  background: none;
+  color: #FF847C;
+}
+#qbootstrap-header.navbar-fixed-top #navbar li.active a span:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+#qbootstrap-header .navbar-default {
+  border: transparent;
+  background: transparent;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  border-radius: 0px;
+}
+@media screen and (max-width: 768px) {
+  #qbootstrap-header .navbar-default {
+    margin-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+#qbootstrap-header .navbar-default .brand-slogan {
+  margin: 28px 0 0 15px;
+  float: left;
+  letter-spacing: 2px;
+  color: #adadad;
+}
+#qbootstrap-header .navbar-default .brand-slogan em {
+  color: #FF847C;
+  font-style: normal;
+}
+#qbootstrap-header a {
+  -webkit-transition: 0s;
+  -o-transition: 0s;
+  transition: 0s;
+}
+
+.section-heading {
+  float: left;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  clear: both;
+
+}
+
+.section-heading h2 {
+  font-size: 60px;
+  color: #fff;
+  display: block;
+  margin:40px 0 40px 0;
+  text-align:center;
+}
+
+@media screen and (max-width: 768px) {
+  .section-heading h2 {
+    font-size: 48px;
+
+  }
+}
+.section-heading h3 {
+  line-height: 1.5;
+  color: #929292;
+}
+@media screen and (max-width: 768px) {
+  .section-heading h3 {
+    font-size: 24px !important;
+    line-height: 34px;
+  }
+}
+
+.btn {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+
+#qbootstrap-00 {
+}
+
+#qbootstrap-00 .container .row {
+  padding:80px 0;
+}
+
+@media screen and (max-width: 992px) {
+  #qbootstrap-00 .container .row {
+    padding:200px 0 80px 0;
+  }
+}
+
+#qbootstrap-01 {
+  margin:0;
+  padding:60px;
+}
+
+
+@media screen and (max-width: 480px) {
+  #qbootstrap-01 {
+    padding: 3em 0;
+  }
+}
+
+.quote {
+  text-align: center;
+  font-size: 24px;
+  line-height: 0;
+  display: table;
+  color: #fff;
+  width: 100%;
+  height: 274px;
+  padding-top: 240px;
+}
+.decripstion {
+  line-height: 24px;
+  color: #d4f8a8;
+  font-size: 18px;
+  text-align:center;
+  padding:0 16px 0 16px;
+}
+
+@media screen and (max-width: 992px) {
+  .quote {
+    padding-top:240px;
+  }
+  .decripstion {
+    margin:20px 0 40px 0;
+    padding: 0 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .decripstion {
+    padding: 0 20px;
+  }
+}
+#qbootstrap-01  blockquote {
+  border-left: none;
+  padding: 20px 20px 0 20px;
+  position: relative;
+  background-image: url(../image/007/bg_007_03.png);
+  background-size:cover;
+  background-repeat: round;
+}
+
+
+#qbootstrap-01 img {
+  display:inline;
+/*  margin-bottom: 20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;*/
+}
+#qbootstrap-01 h3 {
+  font-size: 40px;
+  font-family: BMHanna;
+  color: #0bac3b;
+  text-align:center;    
+}
+@media screen and (max-width: 768px) {
+  #qbootstrap-01 h3 {
+    font-size: 40px;
+  }
+}
+
+#qbootstrap-01 blockquote p {
+  color:#275334;
+  font-size:22px;
+}
+#qbootstrap-01 .paragraph_01{
+  background-image:url(../image/007/icon_007_06.png);
+  background-repeat:no-repeat;
+  background-position:right;
+  padding:60px 260px 160px 60px;
+}
+#qbootstrap-01 .paragraph_02{
+  background-image:url(../image/007/icon_007_07.png);
+  background-repeat:no-repeat;
+  background-position:left;
+  margin-top:-180px;
+  padding:120px 60px 160px 280px;
+}
+#qbootstrap-01 .paragraph_03{
+  background-image:url(../image/007/icon_007_08.png);
+  background-repeat:no-repeat;
+  background-position:right;
+  margin-top:-140px;
+  padding:160px 320px 200px 130px;
+}
+@media screen and (max-width: 992px) {
+  #qbootstrap-01 .paragraph_02 {
+    padding:80px 60px 100px 240px;
+    margin-top:-180px;
+  }
+  #qbootstrap-01 .paragraph_03 {
+    padding:120px 290px 150px 60px;
+    margin-top:-60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #qbootstrap-01 .paragraph_01 {
+    padding:20px 30px 280px 30px;
+    background-position:bottom;
+  }
+  #qbootstrap-01 .paragraph_02 {
+    padding:20px 30px 480px 30px;
+    background-position:bottom;
+    margin-top:0;
+  }
+  #qbootstrap-01 .paragraph_03 {
+    padding:20px 30px 400px 30px;
+    background-position:bottom;
+    margin-top:0;
+
+  }
+}
+
+.qbootstrap-overlay {
+  position: absolute !important;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.qbootstrap-nav-toggle {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.qbootstrap-nav-toggle.active i::before, .qbootstrap-nav-toggle.active i::after {
+  background: #FF847C;
+}
+.qbootstrap-nav-toggle:hover, .qbootstrap-nav-toggle:focus, .qbootstrap-nav-toggle:active {
+  outline: none;
+  border-bottom: none !important;
+}
+.qbootstrap-nav-toggle i {
+  position: relative;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  width: 25px;
+  height: 3px;
+  color: #FF847C;
+  font: bold 14px/.4 Helvetica;
+  text-transform: uppercase;
+  text-indent: -55px;
+  background: #FF847C;
+  transition: all .2s ease-out;
+}
+.qbootstrap-nav-toggle i::before, .qbootstrap-nav-toggle i::after {
+  content: '';
+  width: 25px;
+  height: 3px;
+  background: #FF847C;
+  position: absolute;
+  left: 0;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.qbootstrap-nav-toggle i::before {
+  top: -7px;
+}
+
+.qbootstrap-nav-toggle i::after {
+  bottom: -7px;
+}
+
+.qbootstrap-nav-toggle:hover i::before {
+  top: -10px;
+}
+
+.qbootstrap-nav-toggle:hover i::after {
+  bottom: -10px;
+}
+
+.qbootstrap-nav-toggle.active i {
+  background: transparent;
+}
+
+.qbootstrap-nav-toggle.active i::before {
+  top: 0;
+  -webkit-transform: rotateZ(45deg);
+  -moz-transform: rotateZ(45deg);
+  -ms-transform: rotateZ(45deg);
+  -o-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+}
+
+.qbootstrap-nav-toggle.active i::after {
+  bottom: 0;
+  -webkit-transform: rotateZ(-45deg);
+  -moz-transform: rotateZ(-45deg);
+  -ms-transform: rotateZ(-45deg);
+  -o-transform: rotateZ(-45deg);
+  transform: rotateZ(-45deg);
+}
+
+.qbootstrap-nav-toggle {
+  position: absolute;
+  top: 12px;
+  right: 0px;
+  z-index: 21;
+  padding: 6px 0 0 0;
+  display: block;
+  margin: 0 auto;
+  display: none;
+  height: 44px;
+  width: 44px;
+  border-bottom: none !important;
+}
+@media screen and (max-width: 768px) {
+  .qbootstrap-nav-toggle {
+    display: block;
+  }
+}
+
+.person {
+  text-align: center;
+  margin-bottom: 40px;
+  float: left;
+  width: 100%;
+}
+.person img {
+  display: block;
+  margin: 0 auto;
+  height: 150px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+.person .name {
+  font-size: 24px;
+}
+.person .position {
+  text-transform: uppercase;
+  color: #c3c3c3;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+#footer {
+  padding: 50px 0;
+  color: #7f7f7f;
+}
+#footer .copyright {
+  margin-bottom: 0px;
+  padding-bottom: 0;
+}
+
+.btn {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.btn.btn-primary {
+  background: #FF847C;
+  color: #fff;
+  border: none !important;
+  border: 2px solid transparent !important;
+}
+.btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
+  box-shadow: none;
+  background: #FF847C;
+}
+.btn:hover, .btn:active, .btn:focus {
+  background: #393e46 !important;
+  color: #fff;
+  outline: none !important;
+}
+.btn.btn-default:hover, .btn.btn-default:focus, .btn.btn-default:active {
+  border-color: transparent;
+}
+
+.social {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+.social li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+.social li a {
+  font-size: 16px;
+  display: table;
+  width: 40px;
+  height: 40px;
+  margin: 0 4px;
+}
+.social li a i {
+  display: table-cell;
+  vertical-align: middle;
+}
+.social li a:hover, .social li a:active, .social li a:focus {
+  text-decoration: none;
+  border-bottom: none;
+}
+.social li a.social-box {
+  background: #FF847C;
+  color: #fff;
+}
+.social li a.social-circle {
+  background: #FF847C;
+  color: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+.social li a:hover {
+  background: #393e46 !important;
+}
+.social.social-box a {
+  background: #FF847C;
+  color: #fff;
+}
+.social.social-circle a {
+  background: #FF847C;
+  color: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.js .to-animate,
+.js .to-animate-2,
+.js .single-animate {
+  opacity: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .col-xxs-12 {
+    float: none;
+    width: 100%;
+  }
+}
+
+.row-bottom-padded-lg {
+  padding-bottom: 7em;
+}
+@media screen and (max-width: 768px) {
+  .row-bottom-padded-lg {
+    padding-bottom: 2em;
+  }
+}
+
+.row-bottom-padded-md {
+  padding-bottom: 4em;
+}
+@media screen and (max-width: 768px) {
+  .row-bottom-padded-md {
+    padding-bottom: 2em;
+  }
+}
+
+.row-bottom-padded-sm {
+  padding-bottom: 2em;
+}
+@media screen and (max-width: 768px) {
+  .row-bottom-padded-sm {
+    padding-bottom: 2em;
+  }
+}
+
+.form-control {
+  box-shadow: none;
+  background: transparent;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  height: 54px;
+  font-size: 18px;
+}
+.form-control:active, .form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #FF847C;
+}
+
+.js .animate-box {
+  opacity: 0;
+}
+
+.qbootstrap-animated {
+  -webkit-animation-duration: .3s;
+  animation-duration: .3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/*# sourceMappingURL=style.css.map */
