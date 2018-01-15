@@ -1,0 +1,227 @@
+
+
+@font-face{
+font-family:'BMYEONSUNG';
+src: url(../font/BMYEONSUNG.eot);
+src: url(../font/BMYEONSUNG.eot?#iefix) format('embedded-opentype'),
+     url(../font/BMYEONSUNG.woff) format('woff'),
+     url(../font/BMYEONSUNG_ttf.ttf) format('truetype');
+}
+
+body {
+  font-family: BMYEONSUNG, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #000;
+  background: #fff;
+  height: 100%;
+  position: relative;
+}
+
+a {
+  color: #FF847C;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+a:hover, a:active, a:focus {
+  color: #FF847C;
+  outline: none;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+  font-family: BMYEONSUNG, cursive;
+  margin:0;
+  line-height: 1.4
+}
+
+::-webkit-selection {
+  color: #818892;
+  background: #f9f6f0;
+}
+
+::-moz-selection {
+  color: #818892;
+  background: #f9f6f0;
+}
+
+::selection {
+  color: #818892;
+  background: #f9f6f0;
+}
+
+.qbootstrap-overlay {
+  position: absolute !important;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.js .to-animate,
+.js .to-animate-2,
+.js .single-animate {
+  opacity: 0;
+}
+
+.js .animate-box {
+  opacity: 0;
+}
+
+.qbootstrap-animated {
+  -webkit-animation-duration: .3s;
+  animation-duration: .3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+
+h2 {
+  font-size:60px;
+  margin:0;
+  text-align:center;
+  padding:200px;
+}
+
+h3 {
+  font-size:28px;
+  text-align:center;
+  padding:50px 20px 0 20px;
+}
+
+p {
+  font-size:24px;
+}
+#contents_02,#contents_03,#contents_04,#contents_05{
+  position:relative;
+}
+
+.divider {
+  background-image: url(../image/024/bg_024_01.png);
+  background-repeat:no-repeat;
+  background-position-x:center;
+  height:238px;
+  padding:117px 0;
+  margin:-119px 0;
+}
+.divider div {
+  background-color:#2e1113;
+  height:4px;
+}
+.divider span {
+  color:#fff;
+  font-size:48px;
+  position:absolute;
+  margin-top:-30px;
+  left:50%;
+  transform:translateX(-50%);
+}
+.container {
+  width:100%;
+  padding:0;
+  z-index:0;
+}
+
+.floatright {
+  float:right;
+}
+.floatleft{
+  float:left;
+}
+
+.section_height{
+  height:551px;
+}
+
+
+.section_04 h3,.section_06 h3,.section_08 h3,.section_10 h3{
+  color:#fff9a7;
+}
+
+.section_01{
+  background-image: url(../image/024/bg_024_02.jpg);
+  background-repeat:no-repeat;
+  background-position-x:right;
+  background-size:cover;
+}
+.section_02{
+  background-image: url(../image/024/bg_024_03.jpg);
+  background-repeat:no-repeat;
+  background-position-x:left;
+  background-size:cover;
+}
+.section_03{
+  background-image: url(../image/024/bg_024_04.png);
+  background-repeat:no-repeat;
+  background-position-x:center;
+  background-position-y:bottom;
+}
+.section_04{
+  background-image: url(../image/024/bg_024_05.png);
+  background-repeat:no-repeat;
+  background-position-x:left;
+  background-position-y:bottom;
+}
+
+
+.section_05{
+  background-image: url(../image/024/bg_024_06.png);
+  background-repeat:no-repeat;
+  background-position-x:center;
+  background-position-y:bottom;
+}
+.section_06 {
+  background-image: url(../image/024/bg_024_07.png);
+  background-repeat:no-repeat;
+  background-position-x:right;
+  background-position-y:top;
+}
+.section_06 h3{
+  margin-left:-220px;
+}
+.section_07{
+  background-image: url(../image/024/bg_024_08.png);
+  background-repeat:no-repeat;
+  background-position-x:center;
+  background-position-y:bottom;
+}
+.section_08{
+  background-image: url(../image/024/bg_024_09.png);
+  background-repeat:no-repeat;
+  background-position-x:left;
+  background-position-y:bottom;
+}
+.section_09{
+  background-image: url(../image/024/bg_024_10.png);
+  background-repeat:no-repeat;
+  background-position-x:left;
+  background-position-y:bottom;
+}
+.section_10{
+  background-image: url(../image/024/bg_024_11.png);
+  background-repeat:no-repeat;
+  background-position-x:right;
+  background-position-y:bottom;
+}
+
+@media screen and (max-width: 992px) {
+  h3{
+    padding-top:120px;
+  }
+  .section_04 h3,.section_06 h3, .section_08 h3, .section_10 h3{
+    padding-top:60px;
+  }
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 480px) {
+
+}
