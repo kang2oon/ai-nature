@@ -77,6 +77,7 @@
 			<div class="btn_area">
 				<button type="button" class="on" value="wh">Light Theme</button>
 				<button type="button" class="" value="bk">Dark Theme</button>
+				<button type="button" class="" value="pc">PC Version</button>
 			</div>
 			<div class="mockup_wrapper">
 				<div class="content_wrapper">
@@ -107,9 +108,17 @@
 						btn_state = $(this).attr('value');
 						//console.log(btn_state);
 						if(btn_state == 'bk'){
+							$('body').removeClass('pc');
 							$('body').addClass('bk');
+						} else if(btn_state == 'pc') {
+							$('body').removeClass('bk');
+							$('body').addClass('pc');
+							var mw_height = $('.mockup_wrapper').height();
+							console.log(mw_height);
+							$('.content_wrapper').height(mw_height);
 						} else {
 							$('body').removeClass('bk');
+							$('body').removeClass('pc');
 						}
 					});
 				});

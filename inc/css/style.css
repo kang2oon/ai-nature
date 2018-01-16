@@ -16,6 +16,7 @@ html, body {font-family:'Iropke Batang', Dotum, sans-serif;font-size:14px;-webki
 
 /* Layout */
 body.bk{background: #e5e5e5;}
+body.pc{}
 .sidebar{
 	position:relative;height:100%;width:300px;background:#3f3f3f;color:#fff;padding:13px 30px;
 	-webkit-box-shadow: 3px 0px 13px 0px rgba(0,0,0,0.5);
@@ -51,6 +52,11 @@ body.bk{background: #e5e5e5;}
 	#content_area iframe img{max-width:100%;}
 	.mockup_wrapper{background:url(../../images/mockup_small_wh.png);}
 	.bk .mockup_wrapper{background:url(../../images/mockup_small_bk.png);}
+	.pc .mockup_wrapper{
+		background:#fff;top:0;left:50%;width:calc(100% - 60px);height:calc(100% - 80px);
+		margin-left:calc(((100% - 60px)/2)*-1);margin-top:50px;border-radius:8px;
+	}
+	.pc .mockup_wrapper #content_area{width:100%;height:100%;min-height:640px;top:0;left:0;}
 
 /* Object */
 .btn_area{position:absolute;right:20px;top:0;text-align:center;margin:10px 0 20px;}
@@ -61,4 +67,5 @@ button{
 }
 button[value='wh']{background:#fff;}
 button[value='bk']{background:#454545;border-color:#333;}
+button[value='pc']{background:#99b3ff;border-color:#7396ff;}
 button.on{border:4px solid #f60;}
