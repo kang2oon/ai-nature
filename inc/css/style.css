@@ -40,6 +40,7 @@ body.pc{}
 	.sidebar li[type='aod']:before{content:"S";background:#06f;}
 	.legend{margin-top:30px;padding:10px 0 5px;border-top:1px solid rgba(0,0,0,.25);}
 	.legend_list li{padding:3px;float:left;width:47%;margin-right:3%;font-size:12px;}
+	.legend a{font-size:10px;text-decoration:none;color:#666;}
 .container{position:relative;width:calc(100% - 300px);}
 	.mockup_wrapper{
 		position:absolute;
