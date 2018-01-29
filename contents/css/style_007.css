@@ -243,7 +243,6 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 768px) {
   .section-heading h2 {
     font-size: 48px;
-
   }
 }
 .section-heading h3 {
@@ -285,7 +284,10 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (max-width: 480px) {
   #qbootstrap-01 {
-    padding: 3em 0;
+    padding: 3em 0.5em;
+  }
+  .section-heading h2 {
+    font-size: 30px;
   }
 }
 
@@ -325,10 +327,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 #qbootstrap-01  blockquote {
   border-left: none;
-  padding: 20px 20px 0 20px;
+  padding: 20px 0 0 0;
   position: relative;
-  background-image: url(../image/007/bg_007_03.png);
-  background-size:cover;
+  background-image: url(../image/007/bg_007_04.png);
   background-repeat: round;
 }
 
@@ -350,6 +351,7 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 768px) {
   #qbootstrap-01 h3 {
     font-size: 40px;
+    padding:0 10px;
   }
 }
 
@@ -360,14 +362,21 @@ h1, h2, h3, h4, h5, h6 {
 #qbootstrap-01 .paragraph_01{
   background-image:url(../image/007/icon_007_06.png);
   background-repeat:no-repeat;
+  background-position:left;
+  padding:80px 60px 100px 280px;
+}
+#qbootstrap-01 .paragraph_04{
+  background-image:url(../image/007/icon_007_09.png);
+  background-repeat:no-repeat;
   background-position:right;
-  padding:60px 260px 160px 60px;
+  margin-top:-100px;
+  padding:140px 320px 180px 60px;
 }
 #qbootstrap-01 .paragraph_02{
   background-image:url(../image/007/icon_007_07.png);
   background-repeat:no-repeat;
   background-position:left;
-  margin-top:-180px;
+  margin-top:-120px;
   padding:120px 60px 160px 280px;
 }
 #qbootstrap-01 .paragraph_03{
@@ -375,16 +384,20 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat:no-repeat;
   background-position:right;
   margin-top:-140px;
-  padding:160px 320px 200px 130px;
+  padding:160px 320px 200px 100px;
 }
 @media screen and (max-width: 992px) {
   #qbootstrap-01 .paragraph_02 {
-    padding:80px 60px 100px 240px;
-    margin-top:-180px;
+    padding:100px 60px 100px 240px;
+    margin-top:-100px;
   }
   #qbootstrap-01 .paragraph_03 {
     padding:120px 290px 150px 60px;
     margin-top:-60px;
+  }
+  #qbootstrap-01 .paragraph_04{
+    margin-top:-150px;
+    padding:140px 320px 180px 60px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -398,13 +411,32 @@ h1, h2, h3, h4, h5, h6 {
     margin-top:0;
   }
   #qbootstrap-01 .paragraph_03 {
-    padding:20px 30px 400px 30px;
+    padding:20px 30px 450px 30px;
     background-position:bottom;
     margin-top:0;
-
+  }
+  #qbootstrap-01 .paragraph_04{
+    margin-top:0;
+    padding:20px 30px 380px 30px;
+    background-position:bottom;
   }
 }
+@media screen and (max-width: 480px) {
+  #qbootstrap-01 .paragraph_01 {
+    padding:40px 16px 280px 16px;
+  }
+  #qbootstrap-01 .paragraph_02 {
+    padding:60px 16px 480px 16px;
+  }
+  #qbootstrap-01 .paragraph_03 {
+    padding:60px 16px 450px 16px;
 
+  }
+  #qbootstrap-01 .paragraph_04{
+    margin-top:0;
+    padding:60px 16px 380px 16px;
+  }
+}
 .qbootstrap-overlay {
   position: absolute !important;
   width: 100%;

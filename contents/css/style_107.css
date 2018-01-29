@@ -79,6 +79,9 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat:repeat-y;
   background-position-x:right;
 }
+.row {
+  margin:0;
+}
 #contents_01 {
   padding-top:100px;
 }
@@ -197,9 +200,25 @@ p {
   #contents_03{
     margin-top:0;
   }
+  #paragraph_03 .img-responsive {
+    width:100%;
+    min-width:200px;
+  }
+  #contents_02 {
+  padding-bottom:0;
+  }
 }
 @media screen and (max-width: 480px) {
   #wrapper,#wrapper2 {
     background-size:15%;
+  }
+  span {
+    font-size:14px;
+  }
+  .container {
+    padding: 0 8px;
+  }
+  #paragraph_01,#paragraph_02,#paragraph_03,#paragraph_04,#paragraph_05,#paragraph_06 {
+    margin:0 0 40px 0 ;
   }
 }

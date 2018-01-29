@@ -97,6 +97,7 @@ p {
 }
 .row {
   position:relative;
+  margin:0;
 }
 #wrapper {
 
@@ -142,7 +143,7 @@ p {
 }
 #contents_04{
   position:relative;
-  margin: 0 auto;
+  margin: -600px auto 0 auto;
   background-image:url(../image/143/bg_143_05.jpg);
   background-repeat:no-repeat;
   background-position-y:bottom;
@@ -189,7 +190,7 @@ p {
 .subtitle {
   background-image:url(../image/143/bg_143_03.png);
   background-repeat:no-repeat;
-  width:540px;
+  width:100%;
   height:700px;
   margin:0 auto;
 }
@@ -207,7 +208,7 @@ p {
 }
 
 .subtitle2 {
-  padding: 100px 0 0 200px;
+  padding: 20px 0 0 200px;
 }
 
 .subtitle2 p ,.definition_txt p{
@@ -224,7 +225,8 @@ p {
 }
 #contents2 {
   width:640px;
-  margin:-800px auto 0 auto;
+  margin:0 auto 0 auto;
+  transform:translateY(-600px);
 }
 #contents3 {
   width:640px;
@@ -235,14 +237,16 @@ p {
   text-align:center;
 }
 .desc {
-  margin-top:12px;
+  margin:12px 0 40px 0;
 }
 
-.paragraph, .paragraph2, {
-  margin:0 auto 48px auto;
+.paragraph, .paragraph2 {
+  margin:0 auto 40px auto;
 }
 .paragraph2 {
+  clear:both;
   height:251px;
+  width:760px;
 }
 .paragraph3 {
   margin:0 auto 48px auto;
@@ -260,7 +264,21 @@ p {
   #contents_02 {
     width:100%;
   }
-
+  .paragraph2{
+    height:100%;
+    margin:0 auto;
+    width:100%;
+  }
+  .floatleft, .floatright{
+    float:none;
+    text-align:center;
+  } 
+  .des{
+    padding:24px 0 80px 0;
+  }
+  .des h3, .des p {
+    text-align:center;
+  }
 }
 @media screen and (max-width: 768px) {
   #contents_01 p {
@@ -268,7 +286,7 @@ p {
   }
   .definition_img{
     background-position:top;
-    width:95%;
+    width:100%;
   }
   .definition_txt{
     padding:360px 0 0 0;
@@ -296,7 +314,7 @@ p {
     margin-top:200px;
   }
   #contents_02 {
-    background-size:35%;
+    background-size:25%;
   }
   #contents, #contents3{
     width:100%;
@@ -304,22 +322,9 @@ p {
   #contents2{
     margin:-540px auto 0 auto;
     width:95%;
+    transform:translateY(0);
   }
-  .floatleft, .floatright{
-    float:none;
-    text-align:center;
-  }
-  .paragraph2{
-    height:100%;
-    margin:0 auto;
-  }
-  .des{
-    padding:24px 0 80px 0;
-    }
-  }
-  .des h3, .des p {
-    text-align:center;
-  }
+
   #contents_05{
     padding:400px 0 0 0 ;
   }
@@ -328,11 +333,27 @@ p {
     margin:0 auto;
     width:95%;
   }
-
+  #contents_04 {
+    margin:0 auto;
+    padding:0 0 100px 0;
+  }
 }
+
+
 @media screen and (max-width: 480px) {
   #contents_02 {
     background-image:none;
   }
-
+  img {
+    width:80%;
+  }
+  #contents3 {
+    margin:-300px 0 0 0 ;
+  }
+  .subtitle h2 {
+    font-size:36px;
+  }
+  .definition_txt h4, .subtitle h4 {
+    font-size:32px;
+  }
 }

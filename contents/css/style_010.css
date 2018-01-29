@@ -3,14 +3,14 @@
 font-family:'NanumSquareR';
 src: url(../font/NanumSquareR.eot);
 src: url(../font/NanumSquareR.eot?#iefix) format('embedded-opentype'),
-     /*url(images/NanumSquareR.woff) format('woff'),*/
+     url(../font/NanumSquareR.woff) format('woff'),
      url(../font/NanumSquareRegular.ttf) format('truetype');
 }
 @font-face{
 font-family:'NanumSquareB';
-src: url(../font/NanumSquareb.eot);
-src: url(../font/NanumSquareb.eot?#iefix) format('embedded-opentype'),
-     /*url(images/NanumSquareb.woff) format('woff'),*/
+src: url(../font/nanumsquareb.eot);
+src: url(../font/nanumsquareb.eot?#iefix) format('embedded-opentype'),
+     url(../font/nanumsquareb.woff) format('woff'),
      url(../font/NanumSquareBold.ttf) format('truetype');
 }
 
@@ -39,7 +39,7 @@ a:hover, a:active, a:focus {
 }
 
 p {
-
+  font-size:16px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -94,7 +94,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 768px) {
   .section-heading h2 {
-    font-size: 50px;
+    font-size: 28px;
   }
 }
 .section-heading h3 {
@@ -115,13 +115,26 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 
-#qbootstrap-01,{
+#contents_01,{
   padding: 0;
 }
+#contents_02 {
+  background-image: url(../image/010/bg_010_02.jpg);
+  background-repeat:no-repeat;
+  background-position:top;
+  padding:0 0 260px 0;
+}
+@media screen and (max-width: 768px) {
+
+  #contents_02 {
+    padding:0 0 290px 0;
+  }
+}
 @media screen and (max-width: 480px) {
-  #qbootstrap-01,{
+  #contents_01,{
     padding: 5em 0;
   }
+
 }
 
 .qbootstrap-bg {
@@ -412,41 +425,41 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
 }
 
-#qbootstrap-01 img {
+#contents_01 img {
   margin-bottom: 20px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
-#qbootstrap-01 h3 {
+#contents_01 h3 {
   font-size: 16px;
   font-family: NanumSquareR, cursive;
   color: #41715b;
   line-height: 1.5;
 }
 @media screen and (max-width: 768px) {
-  #qbootstrap-01 h3 {
-    font-size: 16px;
+  #contents_01 h3 {
+    font-size: 14px;
   }
 }
-#qbootstrap-04 h2 {
+#contents_04 h2 {
   color: #fff;
 }
 
-#qbootstrap-04 h3 {
+#contents_04 h3 {
   font-size: 16px;
   font-family: NanumSquareR, cursive;
   color: #95a4b6;
   line-height: 1.5;
 }
 @media screen and (max-width: 768px) {
-  #qbootstrap-04 h3 {
+  #contents_04 h3 {
     font-size: 16px;
   }
 }
 
-#qbootstrap-01 span {
+#contents_01 span {
   color: #FF847C;
   letter-spacing: 10px;
   text-transform: uppercase;
@@ -454,17 +467,17 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid rgba(255, 132, 124, 0.3);
   padding: 2px 5px;
 }
-#qbootstrap-01 .amp-center {
+#contents_01 .amp-center {
   font-size: 60px;
   margin-top: 100%;
   color: #ff847c;
 }
 @media screen and (max-width: 768px) {
-  #qbootstrap-01 .amp-center {
+  #contents_01 .amp-center {
     font-size: 40px;
   }
 }
-#qbootstrap-01 .amp-center .colored .svg {
+#contents_01 .amp-center .colored .svg {
   fill: #FF847C;
 }
 

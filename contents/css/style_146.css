@@ -2,8 +2,8 @@
 font-family:'BMHanna';
 src: url(../font/BMHANNA11yrsold.eot);
 src: url(../font/BMHANNA11yrsold.eot?#iefix) format('embedded-opentype'),
-     url(../font/BMHANNA11yrsold.woff) format('woff'),
-     url(../font/BMHANNA_11yrs_ttf.ttf) format('truetype');
+/*     url(../font/BMHANNA11yrsold.woff) format('woff'),
+*/     url(../font/BMHANNA_11yrs_ttf.ttf) format('truetype');
 }
 
 body {
@@ -79,11 +79,12 @@ h1, h2, h3, h4, h5, h6 {
   background-position-x:right;
   background-size:contain;
 }
+.row {margin:0;}
 #contents_01 {
   padding-top:100px;
 }
 #contents_01 h2{
-  font-size:60px;
+  font-size:38px;
   color:#1e3903;
   text-align:center;
   line-height:1.2;
@@ -133,11 +134,13 @@ h1, h2, h3, h4, h5, h6 {
   max-width:688px;
 }
 @media screen and (max-width: 992px) {
-
+  #wrapper,#wrapper2 {
+    background-size:12%;
+  }
 }
 @media screen and (max-width: 768px) {
   #wrapper,#wrapper2 {
-    background-size:20%;
+    background-size:8%;
   }
   .thumbnail_list {
     width:100%;
@@ -164,6 +167,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 480px) {
   #wrapper,#wrapper2 {
-    background-size:15%;
+    background-size:6%;
+  }
+  #contents_02 .desc {
+    padding:0;
   }
 }

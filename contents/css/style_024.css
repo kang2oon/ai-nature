@@ -87,7 +87,7 @@ h2 {
   font-size:60px;
   margin:0;
   text-align:center;
-  padding:200px;
+  padding:200px 0 0 0;
 }
 
 h3 {
@@ -166,7 +166,7 @@ p {
 .section_04{
   background-image: url(../image/024/bg_024_05.png);
   background-repeat:no-repeat;
-  background-position-x:left;
+  background-position-x:right;
   background-position-y:bottom;
 }
 
@@ -181,10 +181,7 @@ p {
   background-image: url(../image/024/bg_024_07.png);
   background-repeat:no-repeat;
   background-position-x:right;
-  background-position-y:top;
-}
-.section_06 h3{
-  margin-left:-220px;
+  background-position-y:bottom;
 }
 .section_07{
   background-image: url(../image/024/bg_024_08.png);
@@ -195,7 +192,7 @@ p {
 .section_08{
   background-image: url(../image/024/bg_024_09.png);
   background-repeat:no-repeat;
-  background-position-x:left;
+  background-position-x:right;
   background-position-y:bottom;
 }
 .section_09{
@@ -213,15 +210,71 @@ p {
 
 @media screen and (max-width: 992px) {
   h3{
-    padding-top:120px;
+    font-size:24px;
   }
-  .section_04 h3,.section_06 h3, .section_08 h3, .section_10 h3{
+/*  .section_04 h3,.section_06 h3, .section_08 h3, .section_10 h3{
     padding-top:60px;
+  }*/
+  .col-md-6 {
+    width:50%;
+    float:left;
+  }
+  .section_03,.section_04,.section_05,.section_06,.section_07,.section_08,.section_09,.section_10 {
+    background-size: 80%;
+  }
+  .section_height{
+    height:450px;
+  }
+  .divider {
+    background-image: url(../image/024/bg_024_01_medium.png);
+    height:160px;
+    padding:77px 0;
+    margin:-79px 0;
+  }
+  .divider span {
+    font-size:40px;
+    margin-top:-26px;
   }
 }
 @media screen and (max-width: 768px) {
-
+  .section_height{
+    height:360px;
+  }
+  h3{
+    font-size:18px;
+    padding:50px 4px 0 4px;
+  }
+  .divider {
+    background-image: url(../image/024/bg_024_01_small.png);
+    height:120px;
+    padding:57px 0;
+    margin:-59px 0;
+  }
+  .divider span {
+    font-size:30px;
+    margin-top:-19px;
+  }
 }
 @media screen and (max-width: 480px) {
-
+  .section_height{
+    height:260px;
+  }
+  .divider {
+    background-image: url(../image/024/bg_024_01_tiny.png);
+    height:80px;
+    padding:37px 0;
+    margin:-39px 0;
+  }
+  .divider span {
+    font-size:20px;
+    margin-top:-12px;
+  }
+  h3{
+    font-size:16px;
+    padding:20px 4px 0 4px;
+  }
+  h2 {
+    font-size:44px;
+    padding:150px 0 0 0;
+  }
 }

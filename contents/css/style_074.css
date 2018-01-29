@@ -3,14 +3,14 @@
 font-family:'NanumSquareR';
 src: url(../font/NanumSquareR.eot);
 src: url(../font/NanumSquareR.eot?#iefix) format('embedded-opentype'),
-     /*url(images/NanumSquareR.woff) format('woff'),*/
+     url(../font/NanumSquareR.woff) format('woff'),
      url(../font/NanumSquareRegular.ttf) format('truetype');
 }
 @font-face{
 font-family:'NanumSquareB';
-src: url(../font/NanumSquareb.eot);
-src: url(../font/NanumSquareb.eot?#iefix) format('embedded-opentype'),
-     /*url(images/NanumSquareb.woff) format('woff'),*/
+src: url(../font/nanumsquareb.eot);
+src: url(../font/nanumsquareb.eot?#iefix) format('embedded-opentype'),
+     url(../font/nanumsquareb.woff) format('woff'),
      url(../font/NanumSquareBold.ttf) format('truetype');
 }
 
@@ -23,6 +23,7 @@ body {
   background: #fff;
   height: 100%;
   position: relative;
+  overflow-x:hidden;
 }
 
 a {
@@ -39,7 +40,7 @@ a:hover, a:active, a:focus {
 
 h1, h2, h3, h4, h5, h6 {
   color: #000;
-  font-family: NanumSquareB, cursive;
+  font-family: NanumSquareB, Arial, sans-serif;
   margin:0;
   line-height: 1.4
 }
@@ -118,7 +119,6 @@ h5 {
 p {
   font-size:24px;
 }
-
 .container {
   padding-top:32px;
   padding-bottom:32px;

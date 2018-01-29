@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
   padding:0;
   line-height:1.6;
   text-align:center;
-
+  margin-bottom:10px;
 }
 
 ::-webkit-selection {
@@ -87,10 +87,11 @@ h4 {
 
 #wrap {
   margin:0 auto;
+  padding:40px 0;
 
 }
 #contents_01 {
-  margin: 0 auto;
+  margin: 20px auto;
   max-width:1100px;
 }
 
@@ -99,7 +100,6 @@ h4 {
   font-size: 18px;
   text-align:center;
   line-height:1.5;
-  padding-top:10px;
 }
 .background_definition {
   background-repeat:no-repeat;
@@ -137,10 +137,18 @@ h4 {
   padding:293px 0 0 0;
 }
 .quote{
-  padding-top:8px;
   margin:0;
-
 }
+
+
+#particle {
+  width:100%;
+  height:2700px;
+  overflow:hidden;
+  position:absolute;
+  z-index:1;
+}
+
 @media screen and (max-width: 992px) {
   .layout{
     background-image: url(../image/081/bg_081_02.png);
@@ -158,12 +166,36 @@ h4 {
     margin:0px 0 100px 0;
     padding-top:22px;
   }
+  #particle {
+    height:5717px;
+  }
 }
 @media screen and (max-width: 768px) {
   h2{
     font-size:48px;
   }
+  #particle {
+    height:5665px;
   }
+}
 @media screen and (max-width: 480px) {
+  h2{
+    font-size:38px;
+  }
+  #particle {
+    height:5650px;
+  }
 
+}
+
+
+
+
+
+.dot{
+  width:37px;
+  height:60px;
+  position:absolute;
+  background: url(../image/081/leaf.png);
+  background-size: 100% 100%;
 }
