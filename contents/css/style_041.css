@@ -296,9 +296,9 @@ h1, h2, h3, h4, h5, h6 {
 #qbootstrap-01 .decripstion {
   line-height: 24px;
   color: #d4f8a8;
-  font-size: 18px;
+  font-size: 15px;
   text-align:center;
-  padding:0 16px 0 16px;
+  padding:0;
 }
 
 @media screen and (max-width: 992px) {
@@ -385,9 +385,10 @@ h1, h2, h3, h4, h5, h6 {
 #qbootstrap-01 .paragraph_06{
   background-image:url(../image/041/icon_041_07.png);
   background-repeat:no-repeat;
-  background-position:right;
+  background-position-x:right;
+  background-position-y:bottom;
   margin-top:0;
-  padding:180px 420px 114px 80px;
+  padding:180px 420px 114px 60px;
 }
 
 @media screen and (max-width: 992px) {
@@ -396,22 +397,22 @@ h1, h2, h3, h4, h5, h6 {
   }
   #qbootstrap-01 .paragraph_02 {
     padding:120px 290px 120px 30px;
-    margin:0;
+    margin:40px 0 0 0;
   }
   #qbootstrap-01 .paragraph_03 {
     padding:40px 30px 40px 390px;
-    margin:0;
+    margin:40px 0 0 0;
 
   }
   #qbootstrap-01 .paragraph_04 {
     padding:30px 230px 20px 30px;
-    margin:0;
+    margin:40px 0 0 0;
   }
 
   #qbootstrap-01 .paragraph_06 {
     margin-top:0;
     padding:130px 410px 85px 30px;
-    margin:0;
+    margin:40px 0 0 0;
   }
 }
 @media screen and (max-width: 768px) {
@@ -433,7 +434,7 @@ h1, h2, h3, h4, h5, h6 {
   } 
 
   #qbootstrap-01 .paragraph_06 {
-    padding:380px 20px 40px 20px;
+    padding:400px 20px 40px 20px;
     background-position:top;
   }
   #qbootstrap-01 blockquote {

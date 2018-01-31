@@ -356,4 +356,7 @@ p {
   .definition_txt h4, .subtitle h4 {
     font-size:32px;
   }
+  #contents_01 p{
+    font-size:20px;
+  }
 }
