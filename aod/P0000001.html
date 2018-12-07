@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="인공지능 및 증강현실 기반의 자연학습 시스템 개발 지원">
+    <meta name="keywords" content="stroy, story telling, ai, nature, 자연학습, 인공지능, 증강현실, 스토리 콘텐츠, 나무, 식물, 곤충">
+	<meta name="author" content="kang2oon">
+    <meta charset="utf-8">
+	<title>Document</title>
+	<link rel='stylesheet' type="text/css" href="audioplayer/audioplayer.css"/>
+	<link rel='stylesheet' type="text/css" href="aod.css"/>
+</head>
+<body>
+	<div class="player_wrapper">
+		<div class="player_bg" style="background-image:url(images/bg_P0000001.jpg);"></div>
+		<div  id="player" data-type="audio" class="disable-volume audioplayer-tobe skin-wave-mode-small skin-wave button-aspect-noir  theme-light zoomsounds-wrapper-bg-bellow" data-source="audio/P0000001.mp3"   data-playfrom="last" data-wrapper-image="images/bg_P0000001.jpg">
+			<div class="bg_upper"></div>
+			<div class="meta-artist"><span class="the-artist">가짜 죽나무</span><span class="the-name"><a href="#">가죽나무</a></span></div>
+		</div>
+	</div>
+	
+	<div class="script_wrapper">
+		<h1>가죽나무</h1>
+		가죽나무는 사람들이 사는 주변에서 흔히 볼 수 있는 나무입니다.<br/>
+여름날이면 큰 키인 가죽나무는 시원한 그늘을 만들어줍니다. <br/>
+하지만 가짜 죽나무라는 이름에서 보듯 쓸모없는 나무의 대표로 알려져 있습니다.<br/>
+예로부터 가죽나무는 사람들의 사랑을 받을 수 없었습니다. <br/>
+오죽했으며 가짜라는 이름이 붙었을까요? 정말로 가죽나무는 쓸모없는 나무일까요?<br/>
+가죽나무의 모양새는 가지가 옆으로 잘 뻗어 제법 품위를 갖추고 있으며, 공해에 강하고, 생명력이 강해 어디서든 잘 자랍니다. 그래서 요즘에는 가로수로서 새롭게 평가를 받고 있습니다. 옛사람들이 가죽나무를 쓸모없는 나무라고 불리는 이유는 아마도 혜자와 장자의 대화 내용 때문인듯합니다. [장자][외편] 의 ‘산목(열어구)’에서 혜자의 말입니다.<br/><br/>
+<strong>(혜자의 목소리)</strong> 우리 집에 큰 나무 한 그루가 있는데 남들이 가죽나무라고 합니다. 그 줄기엔 옹이가 많아 울퉁불퉁하여 먹줄을 대어 널빤지로 쓸 수 없고, 그 가지는 어찌나 구불텅한지 곡 척을 댄들 쓸모가 없단 말이오. 길가에 서 있어도 목수가 거들떠보지도 않는 다군요. <br/>
+가죽나무 잎은 아주 큰 톱니가 2~3개가 있습니다. 이 톱니 끝을 만져보면 딱딱한 알맹이가 만져지는데 이 알맹이가 고약한 냄새를 뿜어냅니다.<br/>
+가죽나무와 참죽나무는 나무의 종류인 과가 다를 만큼 한참 거리가 있는 나무이지만 생김새가 비슷합니다.<br/>
+진짜 죽나무라는 이름을 가진 참죽나무의 잎 가장자리의 톱니는 일정한 간격으로 얕게 나 있습니다.<br/>
+참죽나무는 꽃향기가 좋고, 잎은 먹을 수 있으며, 목재는 붉고 가공하기 좋아 가구용으로 많이 쓰입니다.<br/>
+예로부터 사찰에 심어 채식하는 스님들이 새순으로 장아찌, 부각, 튀김 등 여러 음식으로 먹었다고 하여 참중, 참죽이라고 불렸습니다. 그런 참죽나무와 비교하여 이름만 비슷하고 먹을 수 없다는 뜻으로 가죽나무라고 불렸습니다.<br/><br/>
+정말 쓸모없는 나무인지 가죽나무와 참죽나무를 비교해보며 관찰해보세요.
+
+	</div>
+	
+	<script type="text/javascript" src="/inc/js/jquery.min.js"></script>
+	<script type="text/javascript" src="audioplayer/audioplayer.js" ></script>
+	<script>
+		jQuery(document).ready(function ($) {
+			
+			dzsap_init("#player", {
+				autoplay: "off"
+				,init_each: "on"
+				,disable_volume: "on"
+				,skinwave_mode: 'normal'
+				,settings_backup_type: 'light' // == light or full
+				,skinwave_: 'light' // == light or full
+				,skinwave_enableSpectrum: "off"
+				,embed_code: 'light' // == light or full
+				,skinwave_wave_mode_canvas_waves_number: "2"
+				,skinwave_wave_mode_canvas_waves_padding: "1"
+				,skinwave_wave_mode_canvas_reflection_size: '.15' // == light or full
+				,design_color_bg: '999999' // --  light or full
+				,design_wave_color_progress: 'ee4444,ff9999' // -- light or full
+				,skinwave_comments_enable: 'off' // -- enable the comments, publisher.php must be in the same folder as this html, also if you want the comments to automatically be taken from the database remember to set skinwave_comments_retrievefromajax to ON
+				,skinwave_comments_retrievefromajax: 'on'// --- retrieve the comment form ajax
+				,failsafe_repair_media_element: 500 // == light or full
+			});
+		});
+	</script>
+</body>
+</html>
