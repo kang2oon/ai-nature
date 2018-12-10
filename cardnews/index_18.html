@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <title>양귀비</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+        <script src="js/galleria-1.5.7.js"></script>
+    </head>
+<body>
+    <div class="content" id="index_18">
+        <div id="fullscreen"></div>
+        <div id="galleria">
+            <img 
+                src="images/18/18_01.jpg",
+                data-big="images/18/18_01.jpg"
+                data-title=""
+                data-description=""
+            >
+            <img 
+                src="images/18/18_02.jpg",
+                data-big="images/18/18_02.jpg"
+                data-title=""
+                data-description=""
+            >
+            <img 
+                src="images/18/18_03.jpg",
+                data-big="images/18/18_03.jpg"
+                data-title=""
+                data-description=""
+            >
+            <img 
+                src="images/18/18_04.jpg",
+                data-big="images/18/18_04.jpg"
+                data-title=""
+                data-description=""
+            >
+            <img 
+                src="images/18/18_05.jpg",
+                data-big="images/18/18_05.jpg"
+                data-title=""
+                data-description=""
+            >
+            <img 
+                src="images/18/18_06.jpg",
+                data-big="images/18/18_06.jpg"
+                data-title=""
+                data-description=""
+            >
+            <img 
+                src="images/18/18_07.jpg",
+                data-big="images/18/18_07.jpg"
+                data-title=""
+                data-description=""
+            >
+            <img 
+                src="images/18/18_08.jpg",
+                data-big="images/18/18_08.jpg"
+                data-title=""
+                data-description=""
+            >
+        </div>
+        <div class="description">
+        </div>
+    </div>
+
+    <script>
+    $(function() {
+        // Load the classic theme
+        Galleria.loadTheme('js/galleria.classic.js');
+        // Initialize Galleria
+        Galleria.run('#galleria');
+        Galleria.configure({
+            transition: 'slide',
+            fullscreenTransition: true,
+            swipe: 'enforced',
+        });
+    });
+    </script>
+    <script>
+        Galleria.ready(function() {
+            var gallery = this; // galleria is ready and the gallery is assigned
+            $('#fullscreen').click(function() {
+                gallery.toggleFullscreen(); // toggles the fullscreen
+            });
+            this.addElement('exit').appendChild('container','exit');
+            var btn = this.$('exit').hide().text('').click(function(e) {
+                gallery.exitFullscreen();
+            });
+            this.bind('fullscreen_enter', function() {
+                btn.show();
+            });
+            this.bind('fullscreen_exit', function() {
+                btn.hide();
+            });
+        });
+    </script>
+    </body>
+</html>

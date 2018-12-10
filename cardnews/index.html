@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <title>EK Card News</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+        <script src="js/galleria-1.5.7.js"></script>
+    </head>
+<body>
+    <div class="content">
+        <div id="fullscreen"></div>
+        <div id="galleria">
+            <img 
+                src="images/007/007_01.jpg",
+                data-big="images/007/007_01.jpg"
+                data-title=""
+                data-description=""
+            >
+            <img 
+                src="images/007/007_02.jpg",
+                data-big="images/007/007_02.jpg"
+                data-title=""
+                data-description=""
+            >
+            <img 
+                src="images/007/007_03.gif",
+                data-big="images/007/007_03.gif"
+                data-title=""
+                data-description="산수유나, 매화, 벚꽃보다 화려하지는 않지만 소박한 갯버들.
+                꽃이 커서 나비와 벌들이 쉬지 않고 윙윙 다가옵니다."
+            >
+            <img 
+                src="images/007/007_04.jpg",
+                data-big="images/007/007_04.jpg"
+                data-title=""
+                data-description=""
+            >
+            <img 
+                src="images/007/007_05.jpg",
+                data-big="images/007/007_05.jpg"
+                data-title=""
+                data-description=""
+            >
+            <img 
+                src="images/007/007_06.gif",
+                data-big="images/007/007_06.gif"
+                data-title=""
+                data-description="열매가 다 익으면 열매껍질이 터져 하얀 솜털 달린 씨앗이 바람에 날립니다."
+            >
+            <img 
+                src="images/007/007_07.jpg",
+                data-big="images/007/007_07.jpg"
+                data-title=""
+                data-description=""
+            >
+        </div>
+        <div class="description">
+            <h2>갯버들이 꽃이라고요?</h2>
+            <p>갯버들은 물가에서 자라는 봄에 피는 꽃입니다.</p>
+            <p>산수유나, 매화, 벚꽃보다 화려하지는 않지만 소박한 갯버들. 꽃이 커서 나비와 벌들이 쉬지 않고 윙윙 다가옵니다.</p>
+            <p>갯버들은 강아지풀과 비슷한 모양에 버들강아지라고도 불립니다.</p>
+            <p>겨우내 회색 솜털로 싸여 있다가 따뜻한 봄이 되면 형형색색의 꽃을 피웁니다.</p>
+            <p>열매가 다 익으면 열매껍질이 터져 하얀 솜털 달린 씨앗이 바람에 날립니다.</p>
+            <p>이번 주말, 물가에 심어진 갯버들을 찾아보는 건 어떨까요?</p>
+        </div>
+    </div>
+
+    <script>
+    $(function() {
+        // Load the classic theme
+        Galleria.loadTheme('js/galleria.classic.js');
+        // Initialize Galleria
+        Galleria.run('#galleria');
+        Galleria.configure({
+            transition: 'slide',
+            fullscreenTransition: true,
+            swipe: 'enforced',
+        });
+    });
+    </script>
+    <script>
+        Galleria.ready(function() {
+            var gallery = this; // galleria is ready and the gallery is assigned
+            $('#fullscreen').click(function() {
+                gallery.toggleFullscreen(); // toggles the fullscreen
+            });
+        });
+    </script>
+    </body>
+</html>

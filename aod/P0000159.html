@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="인공지능 및 증강현실 기반의 자연학습 시스템 개발 지원">
+    <meta name="keywords" content="stroy, story telling, ai, nature, 자연학습, 인공지능, 증강현실, 스토리 콘텐츠, 나무, 식물, 곤충">
+	<meta name="author" content="kang2oon">
+    <meta charset="utf-8">
+	<title>개나리</title>
+	<link rel='stylesheet' type="text/css" href="audioplayer/audioplayer.css"/>
+	<link rel='stylesheet' type="text/css" href="aod.css"/>
+</head>
+<body>
+	<div class="player_wrapper">
+		<div class="player_bg" style="background-image:url(images/bg_P0000159.jpg);"></div>
+		<div  id="player" data-type="audio" class="disable-volume audioplayer-tobe skin-wave-mode-small skin-wave button-aspect-noir  theme-light zoomsounds-wrapper-bg-bellow" data-source="audio/P0000159.mp3"   data-playfrom="last" data-wrapper-image="images/bg_P0000159.jpg">
+			<div class="bg_upper"></div>
+			<div class="meta-artist"><span class="the-artist">봄소식을 먼저 알리는 노란 꽃</span><span class="the-name"><a href="#">개나리</a></span></div>
+		</div>
+	</div>
+	
+	<div class="script_wrapper">
+		<h1>봄소식을 먼저 알리는 노란 꽃, 개나리</h1>
+		겨울이 끝나고 봄이 시작될 때 쯤이면 동네 곳곳에서 노란 개나리가 피기 시작해요.<br/>
+		형님반을 가게 되어 한껏 들뜬 우리 친구들은 길가에 노오란 개나리 울타리 앞을 병아리 떼 종종걸음으로 지나가겠죠?<br/>
+		이른 봄부터 길에는 노란 개나리 세상이에요.<br/>
+		가늘고 긴 가지를 휘휘 늘어뜨리며 사방을 노랗게 물들이는 개나리는 다른 꽃보다 일찍 피어서 봄을 먼저 알려주는 부지런한 꽃이랍니다.<br/>
+		봄을 빨리 알리고 싶어서일까요?<br/>
+		개나리는 잎이 나기도 전에 꽃부터 먼저 핀답니다.<br/>
+		맨 가지에 노란 꽃만 다닥다닥 무더기로 달리니까 온통 샛노란 빛이에요.<br/>
+		한 송이의 꽃잎이 네 갈래로 갈라지며 활짝 열린 모습은 노랑 아기병아리가 입을 쫙쫙 벌린 듯 귀엽고 즐거워요.<br/><br/>
+		노란 꽃이 지면 그 자리에 잎이 나요. <br/>
+		노랗던 곳이 이번에는 초록의 싱그러운 울타리로 바뀌죠.<br/>
+		개나리는 매연 가득한 도시 한복판에서도 잘 견딜 정도로 생명력이 강해요.<br/>
+		게다가 가지만 잘라 꽂아 두어도 뿌리를 내릴 만큼 번식력이 좋고요.<br/>
+		그래서 어디서든 흔하게 볼 수 있는 꽃이 되었답니다.<br/><br/>
+		개나리라는 이름은 &lt;작고 흔하다&gt;는 의미의 &lt;개&gt;와 백합의 우리말인 &lt;나리&gt;가 합쳐져 &lt;백합보다 작고 흔한 꽃&gt;이라는 뜻이래요.<br/><br/>
+		개나리는 우리나라에서 원래부터 살고 있었던 식물이에요.<br/>
+		이렇게 자랑스러운 개나리를 그동안 소홀히 대한 것 같아요.<br/>
+		이제 노란 개나리가 봄 인사를 건네면 가까이 다가가 가슴에 새겨보세요.
+	</div>
+	
+	<script type="text/javascript" src="/inc/js/jquery.min.js"></script>
+	<script type="text/javascript" src="audioplayer/audioplayer.js" ></script>
+	<script>
+		jQuery(document).ready(function ($) {
+			
+			dzsap_init("#player", {
+				autoplay: "off"
+				,init_each: "on"
+				,disable_volume: "on"
+				,skinwave_mode: 'normal'
+				,settings_backup_type: 'light' // == light or full
+				,skinwave_: 'light' // == light or full
+				,skinwave_enableSpectrum: "off"
+				,embed_code: 'light' // == light or full
+				,skinwave_wave_mode_canvas_waves_number: "2"
+				,skinwave_wave_mode_canvas_waves_padding: "1"
+				,skinwave_wave_mode_canvas_reflection_size: '.15' // == light or full
+				,design_color_bg: '999999' // --  light or full
+				,design_wave_color_progress: 'ee4444,ff9999' // -- light or full
+				,skinwave_comments_enable: 'off' // -- enable the comments, publisher.php must be in the same folder as this html, also if you want the comments to automatically be taken from the database remember to set skinwave_comments_retrievefromajax to ON
+				,skinwave_comments_retrievefromajax: 'on'// --- retrieve the comment form ajax
+				,failsafe_repair_media_element: 500 // == light or full
+			});
+		});
+	</script>
+</body>
+</html>

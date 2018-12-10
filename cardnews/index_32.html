@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <title>방아깨비</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+        <script src="js/galleria-1.5.7.js"></script>
+    </head>
+<body>
+    <div class="content">
+        <div id="fullscreen"></div>
+        <div id="galleria">
+            <img 
+                src="images/32/32_01.jpg",
+                data-big="images/32/32_01.jpg"
+                data-title=""
+                data-description=""
+            >
+            <img 
+                src="images/32/32_02.jpg",
+                data-big="images/32/32_02.jpg"
+                data-title=""
+                data-description=""
+            >
+            <img 
+                src="images/32/32_03.jpg",
+                data-big="images/32/32_03.jpg"
+                data-title=""
+                data-description=""
+            >
+            <img 
+                src="images/32/32_04.jpg",
+                data-big="images/32/32_04.jpg"
+                data-title=""
+                data-description=""
+            >
+            <img 
+                src="images/32/32_05.jpg",
+                data-big="images/32/32_05.jpg"
+                data-title=""
+                data-description=""
+            >
+            <img 
+                src="images/32/32_06.jpg",
+                data-big="images/32/32_06.jpg"
+                data-title=""
+                data-description=""
+            >
+            <img 
+                src="images/32/32_07.jpg",
+                data-big="images/32/32_07.jpg"
+                data-title=""
+                data-description=""
+            >
+            <img 
+                src="images/32/32_08.jpg",
+                data-big="images/32/32_08.jpg"
+                data-title=""
+                data-description=""
+            >
+            <img 
+                src="images/32/32_09.jpg",
+                data-big="images/32/32_09.jpg"
+                data-title=""
+                data-description=""
+            >
+        </div>
+        <div class="description">
+            <h2>거대한 뿔로 뒤집기 한판! 장수풍뎅이</h2>
+                <p>딱정벌레목 
+                    장수풍뎅이과
+                    한해살이 곤충</p>
+            <h3></h3>
+            <p></p>
+            <h3></h3>
+            <p></p>
+            <h3></h3>
+            <p></p>
+            <h3></h3>
+            <p></p>
+            <h3></h3>
+            <p></p>
+            <h3></h3>
+            <p></p>
+            <h3></h3>
+            <p></p>
+            <h3></h3>
+            <p></p>
+        </div>
+    </div>
+
+    <script>
+    $(function() {
+        // Load the classic theme
+        Galleria.loadTheme('js/galleria.classic.js');
+        // Initialize Galleria
+        Galleria.run('#galleria');
+        Galleria.configure({
+            transition: 'slide',
+            fullscreenTransition: true,
+            swipe: 'enforced',
+        });
+    });
+    </script>
+    <script>
+        Galleria.ready(function() {
+            var gallery = this; // galleria is ready and the gallery is assigned
+            $('#fullscreen').click(function() {
+                gallery.toggleFullscreen(); // toggles the fullscreen
+            });
+        });
+    </script>
+    </body>
+</html>

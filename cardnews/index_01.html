@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <title>때죽나무</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+        <script src="js/galleria-1.5.7.js"></script>
+    </head>
+<body>
+    <div class="content" id="index_01">
+        <div id="fullscreen"></div>
+        <div id="galleria">
+            <img 
+                src="images/01/01_01.jpg",
+                data-big="images/01/01_01.jpg"
+                data-title=""
+                data-description=""
+            >
+            <img 
+                src="images/01/01_02.jpg",
+                data-big="images/01/01_02.jpg"
+                data-title=""
+                data-description=""
+            >
+            <img 
+                src="images/01/01_03.gif",
+                data-big="images/01/01_03.gif"
+                data-title=""
+                data-description=""
+            >
+            <img 
+                src="images/01/01_04.jpg",
+                data-big="images/01/01_04.jpg"
+                data-title=""
+                data-description=""
+            >
+            <img 
+                src="images/01/01_05.jpg",
+                data-big="images/01/01_05.jpg"
+                data-title=""
+                data-description=""
+            >
+            <img 
+                src="images/01/01_06.jpg",
+                data-big="images/01/01_06.jpg"
+                data-title=""
+                data-description=""
+            >
+            <img 
+                src="images/01/01_07.jpg",
+                data-big="images/01/01_07.jpg"
+                data-title=""
+                data-description=""
+            >
+            <img 
+                src="images/01/01_08.gif",
+                data-big="images/01/01_08.gif"
+                data-title=""
+                data-description=""
+            >
+        </div>
+        <div class="description">
+            <h2>이름에 담긴 많은 이야기 때죽나무</h2>
+                <p>이토록 희고 향기로운데왜 때죽나무라 했을까?</p>
+                <p>봄의 끝자락 5~6월이면 한바탕 울려 퍼지는 순백의 종소리. 종 모양의 새하얀 꽃이 가지마다 눈처럼 내려 서양에서는 스노우 벨(snow bell), 제주에서는 종낭이라 불립니다. ※<낭>은 <나무>의 제주도 방언</p>
+                <p>학명은 Styrax japonica. 스타이랙스(Styrax)는 <편안한 향기'>라는 뜻으로 이름만으로도 향기 좋은 나무임을 알 수 있습니다. 상큼한 레몬 향의 꽃향기는 향수의 원료로 쓰이며, 나무 아래에서 꽃향기를 맡고 있으면 통증이 감소하고 머리가 맑아진다고 합니다.</p>
+            <h3>독이 든 위험한 열매 때죽나무</h3>
+                <p>이렇게 새하얗고 향기로운 꽃을 두고 왜 때죽나무라 불렀을까? 예쁘고 정겨운 이름을 붙이기엔 독성을 지닌 열매가 너무나 위험해서일까? 때죽나무 이름에는 많은 사연이 전해집니다.</p>
+            <h3>때죽나무 이름에 얽힌 여러 이야기</h3>
+                <p>열매와 잎을 찧어 냇물에 풀면 물고기가 마비되어 떼로 잡힌다고 때죽나무, 열매를 빻아 넣은 물에 빨래하면 기름때가 죽죽 빠진다고 때죽나무, 반질반질한 열매가 스님들 머리를 닮아 떼중나무였다가 변형되어 때죽나무, 검고 얼룩덜룩한 나무껍질이 때가 낀 모습 같다고 때죽나무.</p>
+            <h3>생활곳곳 다양하게 쓰여지는 때죽나무</h3>
+                <p>때죽나무는 이름의 유래만큼 쓰임새도 다양합니다. 열매껍질은 마취성분이 있어 통증치료제, 열매는 기름때를 없애주어 세정제, 열매와 종자는 머릿기름이나 등잔불의 원료, 꽃은 향수로 목재는 장기알이나 지팡이로...</p>
+            <h3>고개 숙여아래로 피기에 꽃말도 겸손</h3>
+                <p>이렇듯 꽃으로, 향기로, 열매로, 목재로 부족함이 없는 때죽나무. 고개를 세워 들고 뽐낼 법도 한데 새하얀 꽃은 겸손하게 아래로만 향합니다. 그래서 꽃말도 겸손.</p>
+                <p>저 높이 피어있어도 늘 고개를 숙여 올려다보는 사람들과 눈을 맞추는 때죽나무. 자신 스스로 낮출 줄 아는 모습에서 겸손의 의미를 되새겨봅니다.</p>
+        </div>
+    </div>
+
+    <script>
+    $(function() {
+        // Load the classic theme
+        Galleria.loadTheme('js/galleria.classic.js');
+        // Initialize Galleria
+        Galleria.run('#galleria');
+        Galleria.configure({
+            transition: 'slide',
+            fullscreenTransition: true,
+            swipe: 'enforced',
+        });
+    });
+    </script>
+    <script>
+        Galleria.ready(function() {
+            var gallery = this; // galleria is ready and the gallery is assigned
+            $('#fullscreen').click(function() {
+                gallery.toggleFullscreen(); // toggles the fullscreen
+            });
+        });
+    </script>
+    </body>
+</html>

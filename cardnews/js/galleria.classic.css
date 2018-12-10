@@ -1,0 +1,510 @@
+/**
+ * Galleria Classic Theme 2017-02-13
+ * http://galleria.io
+ *
+ * Copyright (c) 2010 - 2017 worse is better UG
+ * Licensed under the MIT license
+ * https://raw.github.com/worseisbetter/galleria/master/LICENSE
+ *
+ */
+
+ #index_02 .galleria-layer div {
+     position: absolute;
+     width:100%;
+     height:64px;
+     overflow: hidden;
+     top:48px;
+ }
+ #index_02 .galleria-layer h1 {
+    font-family: BMHanna, sans-serif;
+    font-size: 46px;
+    position: absolute;
+    left:50%;
+    transform:translate(-50%, 0);
+    white-space: pre-line;
+    animation: index02 15s linear infinite;
+    color:#000;
+ }
+ @keyframes index02 {
+     0% {
+        transform:translate(-50%, 60px);
+     }
+     65% {
+        transform:translate(-50%, -320px);
+        color:#000;
+     }
+     67% {
+        transform:translate(-50%, -320px);
+        color:#f3572d;
+     }
+     90% {
+        transform:translate(-50%, -320px);
+        color:#f3572d;
+     }
+     100% {
+        transform:translate(-50%, -400px);
+        color:#f3572d;
+     }
+ }
+
+html,
+body {
+    background:#fff;
+    margin:0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+h1 {
+    font-size:20px;
+    font-weight:normal;
+    color:#333;
+    margin:20px auto;
+    text-align:center;
+}
+a {
+    color:#22BCB9;
+    text-decoration:none;
+}
+.content {
+    color:#777;
+    font:12px/1.4 sans-serif;
+    width:700px;
+    margin:20px auto;
+    position:relative;
+}
+.description h2 {
+    text-align:center;
+    font-size:28px;
+    color:#333;
+}
+.description h3 {
+    font-size:18px;
+    color:#555;
+}
+.description p {
+    font-size:14px;
+    color:#666
+}
+#fullscreen, .galleria-exit {
+    position:absolute;
+    z-index:1000;
+    right:0;
+    width:28px;
+    height:28px;
+    background-image:url('../assets/fullscreen.svg');
+    background-repeat:no-repeat;
+    background-size:20px;
+    background-position:center;
+}
+
+#galleria {
+    width:100%;
+    height:700px;
+}
+
+#galleria-loader {
+    height:1px!important
+}
+
+.galleria-theme-classic {
+    position: relative;
+    overflow: hidden;
+    background: white;
+}
+.galleria-theme-classic img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+.galleria-theme-classic .galleria-stage {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow:hidden;
+}
+.galleria-theme-classic .galleria-thumbnails-container {
+    height: 50px;
+    bottom: 0;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    z-index: 2;
+}
+.galleria-theme-classic .galleria-carousel .galleria-thumbnails-list {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.galleria-theme-classic .galleria-thumbnails .galleria-image {
+    height: 40px;
+    width: 60px;
+    background: #000;
+    margin: 0 5px 0 0;
+    border: 1px solid #000;
+    float: left;
+    cursor: pointer;
+}
+.galleria-theme-classic .galleria-counter {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    text-align: right;
+    color: #fff;
+    font: normal 11px/1 arial,sans-serif;
+    z-index: 1;
+}
+.galleria-theme-classic .galleria-loader {
+    background: #000;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+    display: none;
+    background: url(../assets/classic-loader.gif) no-repeat 2px 2px;
+}
+.galleria-theme-classic .galleria-info {
+    width: 90%;
+    bottom: 28px;
+    left: 50%;
+    transform:translateX(-50%);
+    z-index: 2;
+    position: absolute;
+    cursor: unset;
+}
+.galleria-theme-classic .galleria-info-text {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 24px 36px;
+    /* display: none; */
+    /* IE7 */ zoom:1;
+}
+.galleria-theme-classic .galleria-info-title {
+    font: bold 12px/1.1 arial,sans-serif;
+    margin: 0;
+    color: #fff;
+    margin-bottom: 7px;
+}
+.galleria-theme-classic .galleria-info-description {
+    font-size: 28px;
+    font-weight:bolder;
+    margin: 0;
+    color: #fff;
+    text-align:center;
+    white-space: pre-line;
+}
+.galleria-theme-classic .galleria-info-close {
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-position: -753px -11px;
+    opacity: .5;
+    filter: alpha(opacity=50);
+    cursor: pointer;
+    display: none;
+}
+.galleria-theme-classic .notouch .galleria-info-close:hover{
+    opacity:1;
+    filter: alpha(opacity=100);
+}
+.galleria-theme-classic .touch .galleria-info-close:active{
+    opacity:1;
+    filter: alpha(opacity=100);
+}
+.galleria-theme-classic .galleria-info-link {
+    background-position: -669px -5px;
+    opacity: .7;
+    filter: alpha(opacity=70);
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-color: #000;
+    display:none;
+}
+.galleria-theme-classic.notouch .galleria-info-link:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.galleria-theme-classic.touch .galleria-info-link:active {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.galleria-theme-classic .galleria-image-nav {
+    position: absolute;
+    top: 50%;
+    margin-top: -62px;
+    width: 100%;
+    height: 62px;
+    left: 0;
+}
+.galleria-theme-classic .galleria-image-nav-left,
+.galleria-theme-classic .galleria-image-nav-right {
+    opacity: .3;
+    filter: alpha(opacity=30);
+    cursor: pointer;
+    width: 62px;
+    height: 124px;
+    position: absolute;
+    left: 10px;
+    z-index: 2;
+    background-position: 0 46px;
+}
+.galleria-theme-classic .galleria-image-nav-right {
+    left: auto;
+    right: 10px;
+    background-position: -254px 46px;
+    z-index: 2;
+}
+.galleria-theme-classic.notouch .galleria-image-nav-left:hover,
+.galleria-theme-classic.notouch .galleria-image-nav-right:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.galleria-theme-classic.touch .galleria-image-nav-left:active,
+.galleria-theme-classic.touch .galleria-image-nav-right:active {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.galleria-theme-classic .galleria-thumb-nav-left,
+.galleria-theme-classic .galleria-thumb-nav-right {
+    cursor: pointer;
+    display: none;
+    background-position: -495px 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 40px;
+    width: 23px;
+    z-index: 3;
+    opacity: .8;
+    filter: alpha(opacity=80);
+}
+.galleria-theme-classic .galleria-thumb-nav-right {
+    background-position: -578px 5px;
+    border-right: none;
+    right: 0;
+    left: auto;
+}
+.galleria-theme-classic .galleria-thumbnails-container .disabled {
+    opacity: .2;
+    filter: alpha(opacity=20);
+    cursor: default;
+}
+.galleria-theme-classic.notouch .galleria-thumb-nav-left:hover,
+.galleria-theme-classic.notouch .galleria-thumb-nav-right:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    background-color: #111;
+}
+.galleria-theme-classic.touch .galleria-thumb-nav-left:active,
+.galleria-theme-classic.touch .galleria-thumb-nav-right:active {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    background-color: #111;
+}
+.galleria-theme-classic.notouch .galleria-thumbnails-container .disabled:hover {
+    opacity: .2;
+    filter: alpha(opacity=20);
+    background-color: transparent;
+}
+
+.galleria-theme-classic .galleria-carousel .galleria-thumb-nav-left,
+.galleria-theme-classic .galleria-carousel .galleria-thumb-nav-right {
+    display: block;
+}
+
+.galleria-theme-classic .galleria-thumb-nav-left,
+.galleria-theme-classic .galleria-thumb-nav-right,
+.galleria-theme-classic .galleria-info-link,
+.galleria-theme-classic .galleria-info-close,
+.galleria-theme-classic .galleria-image-nav-left,
+.galleria-theme-classic .galleria-image-nav-right {
+    background-image: url(../assets/classic-map.png);
+    background-repeat: no-repeat;
+}
+
+.galleria-theme-classic.galleria-container.videoplay .galleria-info,
+.galleria-theme-classic.galleria-container.videoplay .galleria-counter,
+.galleria-theme-classic .galleria-thumbnails-container {
+    display:none!important;
+}
+
+.galleria-layer h1,
+.galleria-layer h2,
+.galleria-layer h3,
+.galleria-layer h4,
+.galleria-layer h5,
+.galleria-layer h6 {
+    background-position:center;
+    background-size:100%;
+    width:100%;
+    height:100%;
+    margin:0;
+    background-attachment: scroll;
+    z-index:1000;
+}
+
+@media (max-width:500px) {
+    #galleria {
+        width:100%;
+		height:100%;
+    }
+    .content {
+        width:-webkit- calc(100% - 24px);
+        width:-moz- calc(100% - 24px);
+        width: 100%;
+        margin:0 0 20px 0;
+    }
+    .description {
+        padding: 0 12px;
+    }
+    #fullscreen, .galleria-exit {
+        top:8px;
+        right:8px;
+    }
+    .galleria-theme-classic .galleria-info-description {
+        font-size: 14px;
+    }
+    .galleria-theme-classic .galleria-info {
+        bottom: 50%;
+        transform:translate(-50%, 20%);
+    }
+    .galleria-theme-classic .galleria-info-text {
+        padding: 12px 18px;
+    }
+    #index_02 .galleria-layer div {
+        top:32px;
+        height:28px;
+    }
+    #index_02 .galleria-layer h1 {
+        font-size:20px;
+    }
+    @keyframes index02 {
+        0% {
+           transform:translate(-50%, 60px);
+        }
+        65% {
+            transform:translate(-50%, -138px);
+            color:#000;
+        }
+        67% {
+            transform:translate(-50%, -138px);
+            color:#f3572d;
+        }
+        90% {
+            transform:translate(-50%, -138px);
+            color:#f3572d;
+        }
+        100% {
+           transform:translate(-50%, -172px);
+           color:#f3572d;
+        }
+    }
+}
+
+
+@font-face{
+    font-family:'BMHanna';
+    src: url(../fonts/BMHANNA11yrsold.eot);
+    src: url(../fonts/BMHANNA11yrsold.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/BMHANNA11yrsold.woff) format('woff'),
+         url(../fonts/BMHANNA_11yrs_ttf.ttf) format('truetype');
+    }
+
+
+     /* #index_02 .galleria-layer h1::after {
+    font-family: BMHanna, sans-serif;
+    font-size: 46px;
+    color:#000;
+    content:"미세먼지, 황사, 꽃가루,";
+    animation: index02 15s infinite ease-out;
+    -webkit-animation:index02 15s infinite ease-out;
+    left:50%;
+    transform:translate(-50%, 60px);
+    -webkit-transform:translate(-50%, 60px);
+    position: absolute;
+    width:100%;
+    display:block;
+}
+@keyframes index02 {
+    0% {
+        content:"미세먼지, 황사, 꽃가루,";
+        transform:translate(-50%, 52px);
+    }
+    14.9999% {
+        content:"미세먼지, 황사, 꽃가루,";
+        transform:translate(-50%, 16px);
+        -webkit-transform:translate(-50%, 16px);
+        opacity:0;
+    }
+    15% {
+        content:"배기가스, 중금속, 매연,";
+        -webkit-content:"배기가스, 중금속, 매연,";
+        transform:translate(-50%, 52px);
+        opacity:1;
+        -khtml-opacity: 1;
+    }
+    29.9999% {
+        content:"배기가스, 중금속, 매연,";
+        -webkit-content:"배기가스, 중금속, 매연,";
+        transform:translate(-50%, 16px);
+        opacity:0;
+    }
+    30% {
+        content:'스모그, 오존, 분진...';
+        transform:translate(-50%, 52px);
+        opacity:1;
+    }
+    44.9999% {
+        content:'스모그, 오존, 분진...';
+        transform:translate(-50%, 16px);
+        opacity:0;
+    }
+    45% {
+        content:'나날이 더해가는 대기오염...';
+        transform:translate(-50%, 52px);
+        opacity:1;
+    }
+    59.9999% {
+        content:'나날이 더해가는 대기오염...';
+        transform:translate(-50%, 16px);
+        opacity:0;        
+    }
+    60% {
+        content:'몸 속에 쌓여가는 유해물질..';
+        transform:translate(-50%, 52px);
+        opacity:1;
+    }
+    74.9999% {
+        content:'몸 속에 쌓여가는 유해물질..';
+        transform:translate(-50%, 16px);
+        opacity:0;      
+        color:#000;     
+    }
+    75% {
+        content:'도라지로 몸 속 노폐물을 빼내자!';
+        transform:translate(-50%, 52px);
+        opacity:1;
+        color:#f3572d;
+    }
+    80% {
+        content:'도라지로 몸 속 노폐물을 빼내자!';
+        transform:translate(-50%, 44px);
+        opacity:1;
+    }
+    95% {
+        content:'도라지로 몸 속 노폐물을 빼내자!';
+        transform:translate(-50%, 44px);
+        opacity:1;
+    }
+    100% {
+        content:'도라지로 몸 속 노폐물을 빼내자!';
+        opacity:0; 
+        transform:translate(-50%, 20px);
+        color:#f3572d;
+    }
+} */
