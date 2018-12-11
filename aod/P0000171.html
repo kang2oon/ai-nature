@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="인공지능 및 증강현실 기반의 자연학습 시스템 개발 지원">
+    <meta name="keywords" content="stroy, story telling, ai, nature, 자연학습, 인공지능, 증강현실, 스토리 콘텐츠, 나무, 식물, 곤충">
+	<meta name="author" content="kang2oon">
+    <meta charset="utf-8">
+	<title>무궁화</title>
+	<link rel='stylesheet' type="text/css" href="audioplayer/audioplayer.css"/>
+	<link rel='stylesheet' type="text/css" href="aod.css"/>
+</head>
+<body>
+	<div class="player_wrapper">
+		<div class="player_bg" style="background-image:url(images/bg_P0000171.jpg);"></div>
+		<div  id="player" data-type="audio" class="disable-volume audioplayer-tobe skin-wave-mode-small skin-wave button-aspect-noir  theme-light zoomsounds-wrapper-bg-bellow" data-source="audio/P0000171.mp3"   data-playfrom="last" data-wrapper-image="images/bg_P0000171.jpg">
+			<div class="bg_upper"></div>
+			<div class="meta-artist"><span class="the-artist">날마다 새로 피어나는 우리나라 꽃</span><span class="the-name">무궁화</span></div>
+		</div>
+	</div>
+	
+	<div class="script_wrapper">
+		<h1>날마다 새로 피어나는 우리나라 꽃 무궁화</h1>
+		나라마다 그 나라를/ 대표하는 꽃이 있어요.<br/>
+		그 꽃을 나라 꽃, 국화(國花)라고 해요.<br/>
+		우리나라의 나라 꽃은 무궁화랍니다.<br/>
+		(애국가) 무궁화 삼천리 화려강산~ 우리나라를 대표하는 꽃이라서 애국가에도 나오죠.<br/>
+		이뿐만이 아니에요.<br/>
+		나라 꽃 답게 대통령의 휘장에도, 태극기 봉의 끝에도, 법원의 마크에도, 국회의원의 배지에도 무궁화가 등장하죠.<br/>
+		어때요? 무궁화가 이렇게 대단한 꽃인 줄 몰랐죠?<br/><br/>
+		무궁화 꽃은 보통 분홍색이지만 하양, 빨강, 보라, 자주, 파랑 등 다양한 색깔이 있어요.<br/>
+		다섯 장의 꽃잎이 찻잔처럼 벌어지며 가운데에는 붉은 무늬가 있어요.<br/>
+		꽃 중심부에는 노란색의 암술과 수술이 있고요.<br/><br/>
+		무궁화라는 이름은 &lt;없을 무, 다할 궁, 꽃 화&gt;의 한자어를 써요.<br/>
+		끝이 없이 피는 꽃이라는 뜻이죠.<br/>
+		꽃이 끝없이 핀다니 정말일까요?<br/>
+		무궁화는 아침에 피었다가 저녁이면 시들어요.<br/>
+		하루만 사는 꽃이 날마다 새롭게 피어나죠.<br/>
+		이렇게 피고 지고 또 피기를 7월부터 10월까지 약 100일 동안 한대요.<br/>
+		게다가 100일 동안 한 나무에서만 무려 2000송이가 넘게 핀다고 하니 무궁화가 끝없이 피는 꽃이라고 할만하죠?<br/><br/>
+		무궁화는 오래전부터 우리나라 어디서든 쉽게 볼 수 있는 나무였어요.<br/>
+		무궁화의 강한 생명력은 오랜 침략 속에서도 꿋꿋이 견뎌온 우리 민족과 닮았고요.<br/>
+		우리 민족을 닮은 친숙한 꽃이었기에 무궁화가 나라 꽃이 되었죠.<br/>
+		하지만 안타깝게도 일제강점기때 수없이 많은 무궁화가 잘려나갔어요.<br/>
+		우리 민족을 대표하는 꽃이라고 불태워지기도 했고요.<br/>
+		게다가 벌레가 많이 생기는 지저분한 꽃이라고 소문을 퍼트려서 사람들이 무궁화를 멀리하게 했죠.<br/>
+		이때 우리나라의 아름다운 무궁화들이 대부분 사라졌어요.<br/>
+		우리나라에 오래된 무궁화 나무가 없는 것도 이 때문이라고 해요.<br/>
+		다행히도 요즘은 무궁화에 대한 관심이 높아져서 다양한 연구가 이루어지고 있어요.<br/>
+		해마다 무궁화 축제도 열리고요.<br/>
+		우리나라 꽃 무궁화가 예전처럼 사랑받을 수 있도록 우리 친구들도 많은 관심을 가져주세요.
+	</div>
+	
+	<script type="text/javascript" src="/inc/js/jquery.min.js"></script>
+	<script type="text/javascript" src="audioplayer/audioplayer.js" ></script>
+	<script>
+		jQuery(document).ready(function ($) {
+			
+			dzsap_init("#player", {
+				autoplay: "off"
+				,init_each: "on"
+				,disable_volume: "on"
+				,skinwave_mode: 'normal'
+				,settings_backup_type: 'light' // == light or full
+				,skinwave_: 'light' // == light or full
+				,skinwave_enableSpectrum: "off"
+				,embed_code: 'light' // == light or full
+				,skinwave_wave_mode_canvas_waves_number: "2"
+				,skinwave_wave_mode_canvas_waves_padding: "1"
+				,skinwave_wave_mode_canvas_reflection_size: '.15' // == light or full
+				,design_color_bg: '999999' // --  light or full
+				,design_wave_color_progress: 'ee4444,ff9999' // -- light or full
+				,skinwave_comments_enable: 'off' // -- enable the comments, publisher.php must be in the same folder as this html, also if you want the comments to automatically be taken from the database remember to set skinwave_comments_retrievefromajax to ON
+				,skinwave_comments_retrievefromajax: 'on'// --- retrieve the comment form ajax
+				,failsafe_repair_media_element: 500 // == light or full
+			});
+		});
+	</script>
+</body>
+</html>

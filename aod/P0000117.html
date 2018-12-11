@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="인공지능 및 증강현실 기반의 자연학습 시스템 개발 지원">
+    <meta name="keywords" content="stroy, story telling, ai, nature, 자연학습, 인공지능, 증강현실, 스토리 콘텐츠, 나무, 식물, 곤충">
+	<meta name="author" content="kang2oon">
+    <meta charset="utf-8">
+	<title>조팝나무</title>
+	<link rel='stylesheet' type="text/css" href="audioplayer/audioplayer.css"/>
+	<link rel='stylesheet' type="text/css" href="aod.css"/>
+</head>
+<body>
+	<div class="player_wrapper">
+		<div class="player_bg" style="background-image:url(images/bg_P0000117.jpg);"></div>
+		<div  id="player" data-type="audio" class="disable-volume audioplayer-tobe skin-wave-mode-small skin-wave button-aspect-noir  theme-light zoomsounds-wrapper-bg-bellow" data-source="audio/P0000117.mp3"   data-playfrom="last" data-wrapper-image="images/bg_P0000117.jpg">
+			<div class="bg_upper"></div>
+			<div class="meta-artist"><span class="the-artist">수선국이라 불리는</span><span class="the-name">조팝나무</span></div>
+		</div>
+	</div>
+	
+	<div class="script_wrapper">
+		<h1>수선국이라 불리는 조팝나무</h1>
+		조팝나무는 산속 갚은 곳에서 볼 수 있어요.<br/>
+		꽃이 핀 모양이 튀긴 좁쌀을 붙인 것처럼 보인다고 조팝나무라고 해요.<br/>
+		조팝나무를 중국에서는 수선국이라 불려요.<br/>
+		수선국에 얽힌 슬픈 전설이 있습니다.<br/><br/>
+		옛날, 어느 마을에 수선이라는 이름을 가진 소녀가 아버지를 모시고 살고 있었습니다.<br/>
+		그러던 어느 날, 나라에 큰 전쟁이 일어나 아버지는 전쟁터로 나가게 되었습니다.<br/>
+		긴 전쟁이 끝났지만, 아버지는 돌아오시지 않았고, 수선은 아버지를 찾기 위해 길을 나섰습니다.<br/>
+		그러던 중 아버지는 다른 나라의 포로가 되었다는 소문을 듣게 됩니다.<br/>
+		그러자, 수선은 남장을 하고, 위험한 적국으로 가서 온갖 고생 끝에 감옥을 지키는 사람이 되었어요.<br/>
+		그러나 감옥에서도 아버지를 찾을 수가 없었습니다.<br/>
+		옥에 갇혀 있던 아버지는 병을 얻어 돌아가셨기 때문입니다.<br/>
+		그 말을 들은 수선은 슬픔 속에 아버지의 시신을 찾아내, 고향 땅에 모셔와 무덤을 만들었습니다.<br/>
+		그런데, 그다음 해 무덤가 주변에 이름 모를 나무가 자라났습니다.<br/>
+		수선은 아버지를 생각하며 이 나무를 정성껏 키웠습니다.<br/>
+		이 나무가 바로 조팝나무입니다.<br/>
+		그래서 중국에서는 효녀였던 수선의 이름을 붙여 수선국이라 부르기도 합니다.<br/><br/>
+		달력이 흔하지 않았던 옛날, 우리의 선조들은 조팝나무를 보고 벼농사를 지었습니다. <br/>
+		추운 겨울을 지낸 뒤, 조팝나무 가지에 뾰족뾰족 잎이 돋는 것을 보고, 농사철임을 알아 논에 못자리를 하고, 하얀 꽃이 필 무렵 모내기를 시작했고, 
+		조팝나무의 잎이 누런 갈색으로 말라갈 무렵에는 벼를 베기 시작하였다고 합니다.<br/><br/>
+		진한 꽃향기를 가진 조팝나무는 4~5월쯤 되면 새하얀 꽃이 마치 흰 눈가루를 뿌려 놓은 것처럼 수백, 수천 개가 무리 지어 핍니다.<br/>
+		작은 꽃이 좁쌀 밥알에 같이 생겨 좁쌀로 지은 조밥을 흩뜨려 놓은 것 같습니다. <br/>
+		따스한 봄날, 바람에 흩날리는 조팝나무의 꽃을 바라보며 싱그러운 봄을 느껴보는 건 어떨까요?
+	</div>
+	
+	<script type="text/javascript" src="/inc/js/jquery.min.js"></script>
+	<script type="text/javascript" src="audioplayer/audioplayer.js" ></script>
+	<script>
+		jQuery(document).ready(function ($) {
+			
+			dzsap_init("#player", {
+				autoplay: "off"
+				,init_each: "on"
+				,disable_volume: "on"
+				,skinwave_mode: 'normal'
+				,settings_backup_type: 'light' // == light or full
+				,skinwave_: 'light' // == light or full
+				,skinwave_enableSpectrum: "off"
+				,embed_code: 'light' // == light or full
+				,skinwave_wave_mode_canvas_waves_number: "2"
+				,skinwave_wave_mode_canvas_waves_padding: "1"
+				,skinwave_wave_mode_canvas_reflection_size: '.15' // == light or full
+				,design_color_bg: '999999' // --  light or full
+				,design_wave_color_progress: 'ee4444,ff9999' // -- light or full
+				,skinwave_comments_enable: 'off' // -- enable the comments, publisher.php must be in the same folder as this html, also if you want the comments to automatically be taken from the database remember to set skinwave_comments_retrievefromajax to ON
+				,skinwave_comments_retrievefromajax: 'on'// --- retrieve the comment form ajax
+				,failsafe_repair_media_element: 500 // == light or full
+			});
+		});
+	</script>
+</body>
+</html>

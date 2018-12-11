@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="인공지능 및 증강현실 기반의 자연학습 시스템 개발 지원">
+    <meta name="keywords" content="stroy, story telling, ai, nature, 자연학습, 인공지능, 증강현실, 스토리 콘텐츠, 나무, 식물, 곤충">
+	<meta name="author" content="kang2oon">
+    <meta charset="utf-8">
+	<title>회화나무</title>
+	<link rel='stylesheet' type="text/css" href="audioplayer/audioplayer.css"/>
+	<link rel='stylesheet' type="text/css" href="aod.css"/>
+</head>
+<body>
+	<div class="player_wrapper">
+		<div class="player_bg" style="background-image:url(images/bg_P0000155.jpg);"></div>
+		<div  id="player" data-type="audio" class="disable-volume audioplayer-tobe skin-wave-mode-small skin-wave button-aspect-noir  theme-light zoomsounds-wrapper-bg-bellow" data-source="audio/P0000155.mp3"   data-playfrom="last" data-wrapper-image="images/bg_P0000155.jpg">
+			<div class="bg_upper"></div>
+			<div class="meta-artist"><span class="the-artist">큰 인물을 꿈꾸었던</span><span class="the-name">회화나무</span></div>
+		</div>
+	</div>
+	
+	<div class="script_wrapper">
+		<h1>큰 인물을 꿈꾸었던 회화나무</h1>
+		나는 나는 자라서 무엇이 될까요?<br/>
+		여러분은 자라서 무엇이 되고 싶나요?<br/>
+		가수? 운동선수? 대통령?<br/><br/>
+		옛날에는 양반이라면 학자가 되거나 벼슬에 오르는 것이 최고의 꿈이었지요.<br/>
+		회화나무는 옛날 양반들이 사랑했던 나무랍니다.<br/><br/>
+		회화나무는 왜 양반들의 사랑을 받았을까요?<br/>
+		여러 이유가 있지만, 회화나무가 선비와 닮았기 때문이랍니다.<br/>
+		온 사방으로 뻗은 가지는 거침 없는 선비의 기개를 닮았고, 다른 나무보다 뒤늦게 돋는 나뭇잎은 서두르지 않는 선비의 여유를 닮았다 하여 회화나무를 선비 나무라 불렀답니다.<br/>
+		회화나무를 심으면 집안에 큰 인물이나 학자가 나온다고 여겨 궁궐이나 서원, 양반들의 집에 많이 심었어요.<br/><br/>
+		회화나무의 생김새가 궁금하다면, 아까시나무를 떠올려보세요.<br/>
+		여러 개의 작은 잎이 모여 깃털을 닮은 겹잎이 되는 것도 그렇고, 앙증맞은 꽃이 오밀조밀 매달린 모습이며, 콩꼬투리처럼 생긴 열매며, 두 나무가 쌍둥이처럼 닮았지요.<br/><br/>
+		하지만 쉽게 구별이 되는 큰 차이점이 있어요.<br/>
+		회화나무는 아까시나무와 달리 가시가 없거든요.<br/>
+		꽃도 회화나무는 8월의 한여름에서야 뒤늦게 피고요.<br/>
+		오뉴월에 피는 아까시꽃 보다 한참 늦은 셈이지요.<br/>
+		회화나무는 대부분의 봄꽃들과는 달리 보기 드문 여름꽃이랍니다.<br/><br/>
+		연노랑의 올망졸망한 작은 꽃은 은은한 향을 머금고 있어요.<br/>
+		꽃이 지고 나면 콩 꼬투리처럼 생긴 열매가 주렁주렁 열려요.<br/>
+		기품 있는 회화나무의 열매라고 하기에는 들쭉날쭉한 꼬투리 모양새가 다소 우스꽝스럽지만, 그런 의외의 모습이 오히려 친근하게 느껴져요.<br/><br/>
+		회화나무는 꽃, 열매, 나무 모두 약재나 목재, 염색제로 쓰일 만큼 어디 하나 버릴 것 없는 나무에요.<br/>
+		척박한 땅에도 잘 자라고 추위와 공해에도 잘 견뎌서 길가에 가로수로도 많이 심고요.<br/>
+		어쩌면 친구들 집 주변에도 있을 거예요.<br/><br/>
+		옛날 사람들이 회화나무를 심고 꿈꾸었듯이 회화나무를 만난다면 여러분의 희망을 전해보세요.<br/>
+		‘난 세상에 도움이 되는 사람이 싶어. 지켜봐줄래?’
+	</div>
+	
+	<script type="text/javascript" src="/inc/js/jquery.min.js"></script>
+	<script type="text/javascript" src="audioplayer/audioplayer.js" ></script>
+	<script>
+		jQuery(document).ready(function ($) {
+			
+			dzsap_init("#player", {
+				autoplay: "off"
+				,init_each: "on"
+				,disable_volume: "on"
+				,skinwave_mode: 'normal'
+				,settings_backup_type: 'light' // == light or full
+				,skinwave_: 'light' // == light or full
+				,skinwave_enableSpectrum: "off"
+				,embed_code: 'light' // == light or full
+				,skinwave_wave_mode_canvas_waves_number: "2"
+				,skinwave_wave_mode_canvas_waves_padding: "1"
+				,skinwave_wave_mode_canvas_reflection_size: '.15' // == light or full
+				,design_color_bg: '999999' // --  light or full
+				,design_wave_color_progress: 'ee4444,ff9999' // -- light or full
+				,skinwave_comments_enable: 'off' // -- enable the comments, publisher.php must be in the same folder as this html, also if you want the comments to automatically be taken from the database remember to set skinwave_comments_retrievefromajax to ON
+				,skinwave_comments_retrievefromajax: 'on'// --- retrieve the comment form ajax
+				,failsafe_repair_media_element: 500 // == light or full
+			});
+		});
+	</script>
+</body>
+</html>

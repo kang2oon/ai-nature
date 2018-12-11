@@ -127,7 +127,9 @@
         // Load the classic theme
         Galleria.loadTheme('js/galleria.classic.js');
         // Initialize Galleria
-        Galleria.run('#galleria');
+        Galleria.run('#galleria',{
+			height : 1
+		});
         Galleria.configure({
             transition: 'slide',
             fullscreenTransition: true,

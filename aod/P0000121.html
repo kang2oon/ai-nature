@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="인공지능 및 증강현실 기반의 자연학습 시스템 개발 지원">
+    <meta name="keywords" content="stroy, story telling, ai, nature, 자연학습, 인공지능, 증강현실, 스토리 콘텐츠, 나무, 식물, 곤충">
+	<meta name="author" content="kang2oon">
+    <meta charset="utf-8">
+	<title>주목</title>
+	<link rel='stylesheet' type="text/css" href="audioplayer/audioplayer.css"/>
+	<link rel='stylesheet' type="text/css" href="aod.css"/>
+</head>
+<body>
+	<div class="player_wrapper">
+		<div class="player_bg" style="background-image:url(images/bg_P0000121.jpg);"></div>
+		<div  id="player" data-type="audio" class="disable-volume audioplayer-tobe skin-wave-mode-small skin-wave button-aspect-noir  theme-light zoomsounds-wrapper-bg-bellow" data-source="audio/P0000121.mp3"   data-playfrom="last" data-wrapper-image="images/bg_P0000121.jpg">
+			<div class="bg_upper"></div>
+			<div class="meta-artist"><span class="the-artist">우리나라에서 가장 오래된 나무</span><span class="the-name">주목</span></div>
+		</div>
+	</div>
+	
+	<div class="script_wrapper">
+		<h1>우리나라에서 가장 오래된 나무 주목</h1>
+		나무는 얼마나 살 수 있을까요?<br/>
+		물론 나무에 따라 다르긴 하지만, 오래 사는 나무는 천 년 이상을 산다고 해요.<br/>
+		세계에서 제일 오래된 나무는 4800년을 살았고요.<br/>
+		백 년을 살기 힘든 사람들에 비하면 나무의 생명력이 놀라울 따름이에요.<br/>
+		그렇다면 우리나라에서 가장 오래된 나무는 어떤 나무일까요?<br/>
+		바로 강원도 정선에 있는 1400살이 넘은 주목이라는 나무예요.<br/>
+		가장 오래된 나무인 만큼 천연기념물로 지정해서 보호하고 있지요.<br/>
+		이름처럼 정말 주목받는 나무가 되었네요.<br/>
+		주목은 오래 사는 나무로 유명해요.<br/>
+		살아서 천 년, 죽어서 천 년을 산다는 말이 괜히 나온 게 아니에요.<br/><br/>
+		오래 사는 나무들은 성장이 매우 느려요.<br/>
+		세계에서 가장 오래된 나무로 알려진 4800살이 넘은 브리슬콘 소나무는 100년에 고작 10cm씩 굵어진다고 하니까요.<br/>
+		주목 역시 어릴 적에는 아주 천천히 자라요.<br/>
+		그러다 보니 다른 나무들의 그늘 밑에서 클 수밖에 없어요.<br/>
+		큰 나무들에 가려 햇볕도 제대로 못 받고 살지만, 그렇게 10년 정도를 버티면 그때부터는 자라는 속도가 빨라져요.<br/>
+		그리고는 천 년을 넘게 아주 오랫동안 숲을 지키는 주인 노릇을 하지요.<br/><br/>
+		주목이라는 이름은 &lt;붉을 주, 나무 목&gt;이라는 한자어를 써요.<br/>
+		붉은 나무라는 뜻처럼 주목은 줄기가 붉은색에요.<br/><br/>
+		주목은 사계절 내내 푸른 잎을 달고 사는 상록수에요.<br/>
+		짧은 가시처럼 생긴 잎은 사계절 내내 푸르른 침엽수이지만, 그렇다고 소나무나 잣나무의 바늘 잎처럼 뾰족하진 않아요.<br/>
+		그래서 만져도 따갑지 않죠.<br/><br/>
+		가을이 되면 달걀모양의 동그란 열매가 빨갛게 익어요.<br/>
+		신기하게도 열매의 가운데가 뻥 뚫려서 안을 보면 씨앗이 보여요.<br/>
+		잘 익은 열매는 물렁물렁해서 살짝만 눌러도 뭉개져요.<br/>
+		달고 부드러운 열매는 새들이 좋아하죠.<br/>
+		열매 속의 씨앗은 사람들이 좋아하고요.<br>
+		주목의 씨앗과 나무껍질에는, 암을 치료하는 성분이 많이 들어있거든요.<br/>
+		하지만 독성도 함께 들어 있다고 하니까 우리 친구들은 주목의 열매든, 잎이든, 나무껍질이든 먹지 않는 것이 좋겠죠?<br/><br/>
+		주목은 높은 산에 많이 살지만, 요즘은 공원이나 길가에도 많이 심어요.<br/>
+		그래서 어렵지 않게 주목과 마주칠 수 있어요.<br/>
+		오래된 주목을 만나면 가만히 귀를 대보세요.<br/>
+		어쩌면 할아버지 할머니 그 이전의 아주 오래된 이야기를 들려줄지도 모르니까요.
+	</div>
+	
+	<script type="text/javascript" src="/inc/js/jquery.min.js"></script>
+	<script type="text/javascript" src="audioplayer/audioplayer.js" ></script>
+	<script>
+		jQuery(document).ready(function ($) {
+			
+			dzsap_init("#player", {
+				autoplay: "off"
+				,init_each: "on"
+				,disable_volume: "on"
+				,skinwave_mode: 'normal'
+				,settings_backup_type: 'light' // == light or full
+				,skinwave_: 'light' // == light or full
+				,skinwave_enableSpectrum: "off"
+				,embed_code: 'light' // == light or full
+				,skinwave_wave_mode_canvas_waves_number: "2"
+				,skinwave_wave_mode_canvas_waves_padding: "1"
+				,skinwave_wave_mode_canvas_reflection_size: '.15' // == light or full
+				,design_color_bg: '999999' // --  light or full
+				,design_wave_color_progress: 'ee4444,ff9999' // -- light or full
+				,skinwave_comments_enable: 'off' // -- enable the comments, publisher.php must be in the same folder as this html, also if you want the comments to automatically be taken from the database remember to set skinwave_comments_retrievefromajax to ON
+				,skinwave_comments_retrievefromajax: 'on'// --- retrieve the comment form ajax
+				,failsafe_repair_media_element: 500 // == light or full
+			});
+		});
+	</script>
+</body>
+</html>

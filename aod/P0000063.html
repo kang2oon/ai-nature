@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="인공지능 및 증강현실 기반의 자연학습 시스템 개발 지원">
+    <meta name="keywords" content="stroy, story telling, ai, nature, 자연학습, 인공지능, 증강현실, 스토리 콘텐츠, 나무, 식물, 곤충">
+	<meta name="author" content="kang2oon">
+    <meta charset="utf-8">
+	<title>보리수 나무</title>
+	<link rel='stylesheet' type="text/css" href="audioplayer/audioplayer.css"/>
+	<link rel='stylesheet' type="text/css" href="aod.css"/>
+</head>
+<body>
+	<div class="player_wrapper">
+		<div class="player_bg" style="background-image:url(images/bg_P0000063.jpg);"></div>
+		<div  id="player" data-type="audio" class="disable-volume audioplayer-tobe skin-wave-mode-small skin-wave button-aspect-noir  theme-light zoomsounds-wrapper-bg-bellow" data-source="audio/P0000063.mp3" data-playfrom="last" data-wrapper-image="images/bg_P0000063.jpg">
+			<div class="bg_upper"></div>
+			<div class="meta-artist"><span class="the-artist">빨갛고 맛있는 열매가 주렁주렁</span><span class="the-name">보리수 나무</span></div>
+		</div>
+	</div>
+	
+	<div class="script_wrapper">
+		<h1>빨갛고 맛있는 열매가 주렁주렁 보리수 나무</h1>
+		&lt;보리수&gt;라고 불리는 나무가 있어요.<br/>
+		이상하게도 이름은 &lt;보리수&gt; 하나인데 나무는 여러 종류에요.<br/>
+		완전히 다른 나무를 모두 &lt;보리수&gt;라고 부르다 보니 대체 어떤 나무를 말하는 건지 헷갈릴 때가 많아요.<br/><br/>
+		&lt;보리수&gt;라고 하면 3가지 나무를 떠올려요.<br/>
+		우리 주위에서 흔히 보는 &lt;보리수나무&gt;는 키가 작아요.<br/>
+		가을이면 빨간 열매가 열리고 잎은 노랗게 물들죠.<br/>
+		반면, 석가모니가 나무 밑에 앉아 수행했다는 &lt;보리수&gt;는 나무가 크고 사계절 잎이 푸른 상록수에요.<br/>
+		빨간 열매가 열리는 &lt;보리수나무&gt;와 구분하기 위해 &lt;인도 보리수&gt;라고 불러요.
+		&lt;보리수&gt;라 불리는 또 다른 나무는 열매로 염주를 만드는 나무에요.<br/>
+		&lt;보리자나무&gt;라는 이름이 따로 있지요.<br/>
+		이렇게 세 나무 모두 &lt;보리수&gt;라고 부르지만, 사실 &lt;보리수&gt;라 할 수 있는 나무는 오직 하나밖에 없어요.<br/>
+		바로 빨간 열매가 열리는 &lt;보리수나무&gt;죠.<br/><br/>
+		&lt;보리수나무&gt;의 잎은 달걀모양의 긴 타원형으로 생겼어요.<br/>
+		잎의 뒷면은 은회색의 털이 촘촘히 나 있고요.<br/>
+		뽀얀 털은 햇빛을 받으면 반짝거려서 멀리서도 쉽게 구별돼요.<br/><br/>
+		봄이면 &lt;보리수나무&gt;에는 연노랑 빛이 감도는 하얀 꽃이 펴요.<br/>
+		종 모양으로 생긴 작은 꽃은 향기가 좋고 꿀이 많아 벌들이 쉬지 않고 모여들죠.<br/>
+		가을이 되면 가지마다 주렁주렁 매달린 열매가 빨갛게 익어요.<br/>
+		동그랗고 작은 열매에는 비늘 모양의 은회색 잔털이 나 있어요.<br/>
+		달콤한 열매는 예전부터 사람들의 좋은 간식거리였죠.<br/>
+		열매 속의 씨앗은 보리처럼 생겼어요.<br/>
+		그래서 이름을 보리수나무라고 지었대요.<br/><br/>
+		서로 다른 나무를 똑같이 &lt;보리수&gt;라고 부르는 바람에 그동안 &lt;보리수&gt;에 관해 여러 오해가 있었죠.<br/>
+		각자 다른 이름을 가지고 있음에도 사람들이 같은 이름으로 잘못 부른 탓이에요.<br/>
+		빨간 열매가 달리는 나무는 &lt;보리수나무&gt;,<br/>
+		부처님이 깨달음을 얻은 나무는 &lt;인도 보리수&gt;,<br/>
+		염주를 만드는 열매가 달리는 나무는 &lt;보리자나무&gt;!<br/>
+		이번 기회에 &lt;보리수&gt;라 불렸던 나무들에 대해 잘 알아두었다가 나무 각각에 맞는 이름을 불러주기로 해요.
+	</div>
+	
+	<script type="text/javascript" src="/inc/js/jquery.min.js"></script>
+	<script type="text/javascript" src="audioplayer/audioplayer.js" ></script>
+	<script>
+		jQuery(document).ready(function ($) {
+			
+			dzsap_init("#player", {
+				autoplay: "off"
+				,init_each: "on"
+				,disable_volume: "on"
+				,skinwave_mode: 'normal'
+				,settings_backup_type: 'light' // == light or full
+				,skinwave_: 'light' // == light or full
+				,skinwave_enableSpectrum: "off"
+				,embed_code: 'light' // == light or full
+				,skinwave_wave_mode_canvas_waves_number: "2"
+				,skinwave_wave_mode_canvas_waves_padding: "1"
+				,skinwave_wave_mode_canvas_reflection_size: '.15' // == light or full
+				,design_color_bg: '999999' // --  light or full
+				,design_wave_color_progress: 'ee4444,ff9999' // -- light or full
+				,skinwave_comments_enable: 'off' // -- enable the comments, publisher.php must be in the same folder as this html, also if you want the comments to automatically be taken from the database remember to set skinwave_comments_retrievefromajax to ON
+				,skinwave_comments_retrievefromajax: 'on'// --- retrieve the comment form ajax
+				,failsafe_repair_media_element: 500 // == light or full
+			});
+		});
+	</script>
+</body>
+</html>
