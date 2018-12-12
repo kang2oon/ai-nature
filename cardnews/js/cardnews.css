@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
+
+body{margin:0;padding:0;background:#fff;}
+.description{padding:20px;font-size:14px;line-height:1.6;font-family: 'Noto Sans KR', sans-serif;color:#000;}
+.description h2{font-size:24px;text-align:left;margin:20px 0 30px;color:#000;}
+.description h3{font-size:16px;margin:20px 0 10px;color:#000;}
+.description p{font-size:14px;margin:0 0 5px;color:#000;}

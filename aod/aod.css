@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
+
 body{margin:0;padding:0;background:#fff;}
 .player_wrapper{
 position:relative;
@@ -25,5 +27,5 @@ opacity: .35;-webkit-opacity: .35;
 .audioplayer.skin-wave .ap-controls .con-playpause-con{margin:0 10px;}
 .zoomsounds-wrapper-bg-bellow.skin-wave-mode-small .ap-controls .ap-controls-left:not(.ceva) .meta-artist-con{width:auto;margin:0 0 10px 10px;}
 
-.script_wrapper{padding:20px;font-size:13px;line-height:1.6;}
-.script_wrapper h1{font-size:24px;}
+.script_wrapper{padding:20px;font-size:14px;line-height:1.6;font-family: 'Noto Sans KR', sans-serif;}
+.script_wrapper h1{font-size:24px;margin:20px 0 30px;}

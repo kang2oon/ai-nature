@@ -32,7 +32,7 @@ body.pc{}
 	.year_list li a.on{background:rgba(255,255,0,.1);border-color:#ff0;color:#ff0;}
 	.story_list{margin-top:20px;display:none;}
 	.story_list#second1{display:block;}
-	.story_list li{cursor:pointer;padding:7px 3px;border-top:1px dotted #666;float:left;width:47%;margin-right:3%;}
+	.story_list li{cursor:pointer;padding:7px 3px;border-top:1px dotted #666;float:left;width:47%;margin-right:3%;letter-spacing:-1px;}
 	.story_list li:first-child, .story_list li:nth-child(2){border:none;}
 	.story_list li:hover{background:rgba(0,0,0,.25);}
 	.sidebar li:before{

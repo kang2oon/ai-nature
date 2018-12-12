@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-        <title>양귀비</title>
+        <title>양귀비</title>
+		<link type="text/css" rel="stylesheet" href="js/cardnews.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
         <script src="js/galleria-1.5.7.js"></script>
     </head>
@@ -61,41 +62,44 @@
             >
         </div>
         <div class="description">
+			<h2>아름답지만 위험한 꽃  양귀비</h2>
+			<p>* 분류 : 양귀비과의 두해살이 풀<br/>
+			* 꽃피는 시기 : 5~6월<br/>
+			* 열매 맺는 시기 :7~8월<br/>
+			* 다른 이름 : 아편꽃, 앵속<br/>
+			* 꽃말 : 위로, 위안, 몽상(붉은색 양귀비)</p>
+			<h3>절세미인 양귀비처럼 아름다운 꽃</h3>
+			<p>양귀비라고 들어보셨나요?<br/>
+			양귀비는 중국 당나라 현종의 연인이지요.<br/>
+			나라를 망하게 할 정도로 아름다웠던 양귀비처럼  아름다운 꽃이라서 양귀비라 불렀답니다.</p>
+			<h3>함부로 키울 수 없는 양귀비</h3>
+			<p>사실 양귀비를 직접 보기는 어려워요.<br/>
+			양귀비 열매는 마약류인 아편의 원료라서  우리나라에서는 키우는 것이 금지되어 있거든요.<br/>
+			하지만 마약 성분이 들어있지 않는 양귀비는 꽃양귀비 또는 개양귀비라고 하여 흔히 볼 수 있어요.</p>
+			<h3>아름다움의 두 얼굴</h3>
+			<p>꽃양귀비는 &lt;우미인초&gt;라고도 하는데, 우미인은 중국 한나라 항우의 연인이랍니다.<br/>
+			두 여인 모두 역사에 남을 절세미인이었지만 나라를 혼란에 빠뜨린 양귀비는 아편이 있는 양귀비에 이름을 남겼고, 
+			한결같이 항우만을 사랑한 우미인은 아편이 없는 양귀비에 이름을 남겼지요.</p>
+			<h3>마음대로 키워도 되는 꽃양귀비</h3>
+			<p>이처럼 화려하고 아름다운 꽃을 즐기기 위해 꽃양귀비를 많이 키운답니다.<br/>
+			하지만 종종 꽃양귀비에 아편 성분이 있는  양귀비가 섞여서 곤욕을 치르는 경우가 있어요.<br/>
+			관상용인 꽃양귀비와 마약용인 양귀비가 어떻게 다른지 함께 알아보도록 해요.</p>
+			<h3>양귀비와 꽃양귀비 구별법1.</h3>
+			<p><strong>털과 열매 모양</strong><br/>
+			꽃양귀비는 줄기와 꽃받침에 털이 촘촘하게 나 있지만,  양귀비는 털이 없거나 아주 적어요.<br/>
+			꽃양귀비는 열매가 작은 도토리 모양이지만, 양귀비는 알사탕처럼 크고 둥글답니다.</p>
+			<h3>양귀비와 꽃양귀비 구별법2.</h3>
+			<p><strong>잎 모양</strong><br/>
+			양귀비는 잎이 두껍고 흰 가루가 덮여 있어 회청색을 띠지요.<br/>
+			잎이 줄기를 감싸듯이 나며, 가장자리는 톱니 모양이에요.<br/>
+			꽃양귀비는 잎이 좁고 끝이 뾰족한 깃털 모양이고요.</p>
+			<h3>꽃양귀비 한번 키워볼까요?</h3>
+			<p>양귀비는 꽃 색깔에 따라 꽃말이 달라요.<br/>
+			붉은색은 위로, 위안, 몽상, 흰색은 망각, 잠, 자주색은 사치, 환상이라고 해요.<br/>
+			비록 가까이 두고 키울 수는 없지만, 양귀비 못지않게 아름다운 꽃양귀비가 있으니 이번 기회에 꽃양귀비 한번 키워볼까요?</p>
         </div>
     </div>
 
-    <script>
-    $(function() {
-        // Load the classic theme
-        Galleria.loadTheme('js/galleria.classic.js');
-        // Initialize Galleria
-        Galleria.run('#galleria',{
-			height : 1
-		});
-        Galleria.configure({
-            transition: 'slide',
-            fullscreenTransition: true,
-            swipe: 'enforced',
-        });
-    });
-    </script>
-    <script>
-        Galleria.ready(function() {
-            var gallery = this; // galleria is ready and the gallery is assigned
-            $('#fullscreen').click(function() {
-                gallery.toggleFullscreen(); // toggles the fullscreen
-            });
-            this.addElement('exit').appendChild('container','exit');
-            var btn = this.$('exit').hide().text('').click(function(e) {
-                gallery.exitFullscreen();
-            });
-            this.bind('fullscreen_enter', function() {
-                btn.show();
-            });
-            this.bind('fullscreen_exit', function() {
-                btn.hide();
-            });
-        });
-    </script>
+    <script src="js/cardnews.js"></script>
     </body>
 </html>

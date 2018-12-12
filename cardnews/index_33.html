@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-        <title>방아깨비</title>
+        <title>사마귀</title>
+		<link type="text/css" rel="stylesheet" href="js/cardnews.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
         <script src="js/galleria-1.5.7.js"></script>
     </head>
@@ -128,7 +129,7 @@
                 알을 싸고 있는 거품이 말라 굳으면 튼튼한 알집이 되어
                 비바람에도 추운 날씨에도 알들을 안전하게 지켜준답니다.</p>
             <h3>사마귀 한살이
-                <알→애벌레→어른벌레></h3>
+                &lt;알→애벌레→어른벌레&gt;</h3>
             <p>알은 봄에 깨어 7번의 허물을 벗으면 어른 사마귀가 됩니다.
                 사마귀는 번데기 과정을 거치지 않기 때문에
                 애벌레의 모습도 어른 사마귀와 비슷하죠.
@@ -141,28 +142,6 @@
         </div>
     </div>
 
-    <script>
-    $(function() {
-        // Load the classic theme
-        Galleria.loadTheme('js/galleria.classic.js');
-        // Initialize Galleria
-        Galleria.run('#galleria',{
-			height : 1
-		});
-        Galleria.configure({
-            transition: 'slide',
-            fullscreenTransition: true,
-            swipe: 'enforced',
-        });
-    });
-    </script>
-    <script>
-        Galleria.ready(function() {
-            var gallery = this; // galleria is ready and the gallery is assigned
-            $('#fullscreen').click(function() {
-                gallery.toggleFullscreen(); // toggles the fullscreen
-            });
-        });
-    </script>
+    <script src="js/cardnews.js"></script>
     </body>
 </html>
